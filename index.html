@@ -1,0 +1,2183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Livotec Philippines | Purified water, made at home</title>
+<meta name="description" content="Livotec reverse-osmosis water purifiers for Filipino homes. See how much you save versus gallon refills, find your model, and book your pre-installation survey.">
+<meta name="theme-color" content="#194141">
+<meta property="og:title" content="Livotec: stop renting your water">
+<meta property="og:description" content="RO water purifiers from ₱19,990 with free standard installation and 5 years free maintenance. Calculate your savings and book a pre-installation survey.">
+<meta property="og:image" content="assets/video/livotec-film-poster.webp">
+<link rel="icon" href="assets/img/brand/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* =========================================================================
+   Livotec Philippines, consumer site
+   Brand: Livotec Brand ID & Logo Guidelines 2026. Strong Cyan #00B9AD,
+   Very Dark Cyan #194141, supporting palettes Beige / Blush Pink / Mint /
+   Light Blue (same system as the consumer flyers). Typeface: Be Vietnam Pro.
+   ========================================================================= */
+:root{
+  --cyan:#00B9AD; --cyan-hl:#009A90; --cyan-ink:#00665F; --deep:#194141;
+  --bg:#FFFFFF; --ink:#194141; --ink-2:#5E6B6B; --line:#E1E8E6;
+  --beige:#F5EEE4; --blush:#FCEBEC; --mint:#E4F4F1; --blue:#E4F0F8; --plate:#EDF5F4;
+  --on-deep:#FFFFFF; --on-deep-2:#B9D4D1; --line-deep:rgba(255,255,255,.14);
+  --radius:20px; --wrap:1200px;
+  --font:"Be Vietnam Pro","Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F2424; --ink:#E6F2F1; --ink-2:#A3BAB8; --line:#244140; --cyan-ink:#5ED3C9; --cyan-hl:#3FD0C4;
+    --beige:#1B2A28; --blush:#241F24; --mint:#122E2B; --blue:#122A33; --deep:#0A1A1A; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0F2424; --ink:#E6F2F1; --ink-2:#A3BAB8; --line:#244140; --cyan-ink:#5ED3C9; --cyan-hl:#3FD0C4;
+  --beige:#1B2A28; --blush:#241F24; --mint:#122E2B; --blue:#122A33; --deep:#0A1A1A; color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:calc(80px + env(safe-area-inset-top,0px));scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img,video{max-width:100%;display:block}
+img{height:auto}
+h1,h2,h3,h4,p,ul,ol,dl,dd,figure{margin:0}
+ul,ol{padding:0;list-style:none}
+a{color:inherit}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--cyan);outline-offset:3px;border-radius:4px}
+.sr-only{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.wrap{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 max(24px,env(safe-area-inset-left)) 0 max(24px,env(safe-area-inset-right))}
+.skip{position:absolute;left:12px;top:-60px;z-index:100;background:var(--deep);color:#fff;padding:10px 14px;border-radius:10px}
+.skip:focus{top:12px}
+.num{font-variant-numeric:tabular-nums}
+
+/* ---------- Type: two-tone headlines, as in the Livotec flyers ---------- */
+.hl{font-weight:700;font-size:clamp(2.3rem,5.4vw,4.6rem);line-height:1.02;letter-spacing:-.04em;color:var(--ink)}
+.hl span{display:block;color:var(--cyan-hl)}
+.hl--md{font-size:clamp(2rem,4vw,3.3rem)}
+.hl--sm{font-size:clamp(1.7rem,3vw,2.4rem)}
+.kicker{font-size:.95rem;font-weight:600;color:var(--cyan-ink);margin-bottom:18px}
+.lede{font-size:clamp(1.05rem,1.5vw,1.22rem);line-height:1.6;color:var(--ink-2);max-width:52ch}
+.muted{color:var(--ink-2)}
+.small{font-size:.875rem;line-height:1.55}
+.note{font-size:.8125rem;line-height:1.55;color:var(--ink-2);max-width:72ch}
+
+/* ---------- Buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 24px;border-radius:999px;border:1.5px solid transparent;font-weight:600;font-size:.97rem;text-decoration:none;cursor:pointer;transition:background .2s,border-color .2s,color .2s;white-space:nowrap}
+.btn--primary{background:var(--cyan);color:#062B28}
+.btn--primary:hover{background:#12CBBF}
+.btn--dark{background:var(--deep);color:#fff}
+.btn--dark:hover{background:#0f3030}
+.btn--ghost{border-color:currentColor;background:transparent}
+.btn--ghost:hover{background:color-mix(in srgb,currentColor 9%,transparent)}
+.btn--sm{min-height:40px;padding:0 16px;font-size:.875rem}
+
+/* ---------- Header ---------- */
+.site-head{position:fixed;inset:0 0 auto 0;z-index:50;padding-top:env(safe-area-inset-top,0px);transition:background .3s,border-color .3s,color .3s;border-bottom:1px solid transparent;color:#fff}
+.site-head.is-solid{background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-color:var(--line);color:var(--ink)}
+.site-head__bar{display:flex;align-items:center;gap:24px;height:74px}
+.logo{display:block;width:130px;flex:none}
+.logo img{width:100%;height:auto}
+.logo .on-light{display:none}
+.site-head.is-solid .logo .on-dark{display:none}
+.site-head.is-solid .logo .on-light{display:block}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .site-head.is-solid .logo .on-dark{display:block}:root:not([data-theme="light"]) .site-head.is-solid .logo .on-light{display:none}}
+.nav{display:flex;gap:4px;margin-left:auto}
+.nav a{padding:8px 13px;border-radius:999px;text-decoration:none;font-size:.9rem;font-weight:500;opacity:.8;transition:opacity .2s,background .2s}
+.nav a:hover{opacity:1}
+.nav a[aria-current="true"]{opacity:1;background:color-mix(in srgb,currentColor 9%,transparent)}
+.progress{position:absolute;left:0;bottom:-1px;height:2px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:var(--cyan)}
+.menu-btn{display:none;margin-left:auto;width:44px;height:44px;border-radius:12px;border:1px solid currentColor;background:transparent;cursor:pointer}
+.menu-btn svg{margin:auto}
+@media (max-width:980px){
+  .nav{display:none}.menu-btn{display:grid}.site-head .btn--primary{display:none}
+  .site-head.menu-open{background:var(--bg);color:var(--ink);border-color:var(--line)}
+  .site-head.menu-open .logo .on-dark{display:none}.site-head.menu-open .logo .on-light{display:block}
+  .site-head.menu-open .nav{display:grid;position:absolute;left:0;right:0;top:100%;background:var(--bg);padding:12px 24px 24px;border-bottom:1px solid var(--line);gap:2px}
+  .site-head.menu-open .nav a{font-size:1.05rem;padding:12px 8px;border-radius:12px}
+}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;min-height:100svh;min-height:100vh;display:grid;align-items:end;color:#fff;background:#07100f;overflow:hidden;isolation:isolate}
+.hero__film{position:absolute;inset:0;z-index:-2}
+.hero__film video{width:100%;height:100%;object-fit:cover}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(7,16,15,.8) 0%,rgba(7,16,15,.45) 44%,rgba(7,16,15,0) 72%),linear-gradient(180deg,rgba(7,16,15,.5) 0%,rgba(7,16,15,0) 30%,rgba(7,16,15,.1) 55%,rgba(7,16,15,.82) 100%)}
+.hero__inner{padding-top:140px;padding-bottom:clamp(40px,7vh,84px);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:40px;align-items:end}
+.hero .hl{color:#fff;font-size:clamp(2.7rem,6.6vw,5.6rem);max-width:12ch}
+.hero .hl span{color:#3FD6CA}
+.hero__sub{margin-top:24px;font-size:clamp(1.02rem,1.4vw,1.2rem);line-height:1.6;color:rgba(255,255,255,.86);max-width:50ch}
+.hero__cta{margin-top:34px;display:flex;flex-wrap:wrap;gap:12px}
+.hero__cta .btn--ghost{color:#fff}
+.hero__proof{margin-top:30px;display:flex;flex-wrap:wrap;gap:10px 26px;font-size:.9rem;color:rgba(255,255,255,.82)}
+.hero__proof span{display:flex;align-items:center;gap:8px}
+.hero__proof svg{width:17px;height:17px;color:#3FD6CA}
+.film-ctrl{display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.film-ctrl p{font-size:.8125rem;color:rgba(255,255,255,.7)}
+.film-ctrl__row{display:flex;gap:8px}
+.icon-btn{width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.45);background:rgba(7,16,15,.25);color:#fff;display:grid;place-items:center;cursor:pointer;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.icon-btn:hover{background:rgba(255,255,255,.16)}
+.icon-btn svg{width:18px;height:18px}
+@media (max-width:760px){.hero__inner{grid-template-columns:1fr}.film-ctrl{align-items:flex-start}}
+
+/* ---------- Sections ---------- */
+.sec{padding:clamp(88px,11vw,150px) 0}
+.sec--beige{background:var(--beige)}
+.sec--blush{background:var(--blush)}
+.sec--mint{background:var(--mint)}
+.sec--blue{background:var(--blue)}
+.sec--deep{background:var(--deep);color:var(--on-deep)}
+.sec--deep .hl{color:#fff}.sec--deep .hl span{color:#3FD6CA}
+.sec--deep .lede,.sec--deep .muted,.sec--deep .note{color:var(--on-deep-2)}
+.sec--deep .kicker{color:var(--cyan)}
+.head{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:48px;align-items:end}
+@media (max-width:900px){.head{grid-template-columns:1fr;gap:20px}}
+.block{margin-top:clamp(56px,7vw,96px)}
+.duo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,5vw,72px);align-items:center}
+@media (max-width:900px){.duo{grid-template-columns:1fr}}
+
+/* ---------- 01 Cost ---------- */
+.gallons{display:grid;grid-template-columns:repeat(16,minmax(0,1fr));gap:6px 7px;max-width:560px}
+.gallons i{display:block;aspect-ratio:3/4;border-radius:4px 4px 3px 3px;background:#DCC7A4;position:relative;opacity:.9}
+.gallons i::before{content:"";position:absolute;left:30%;right:30%;top:-3px;height:3px;border-radius:2px 2px 0 0;background:#DCC7A4}
+.gallons i::after{content:"";position:absolute;left:18%;right:18%;top:45%;height:2px;background:rgba(255,255,255,.55)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .gallons i,:root:not([data-theme="light"]) .gallons i::before{background:#6F6048}}
+.count{display:flex;align-items:flex-end;gap:16px;margin-top:26px}
+.count b{font-weight:800;font-size:clamp(3.4rem,6vw,5rem);letter-spacing:-.05em;line-height:.9}
+.count p{color:var(--ink-2);line-height:1.4;padding-bottom:4px}
+.versus{text-align:center}
+.versus figure{max-width:360px;margin:0 auto}
+.versus small{display:block;margin-top:16px;font-size:.85rem;font-weight:600;letter-spacing:.14em;color:var(--ink-2)}
+.versus h3{font-weight:700;font-size:clamp(1.8rem,3vw,2.4rem);letter-spacing:-.03em;margin-top:4px}
+.price-pill{display:inline-grid;margin-top:18px;padding:12px 34px;border-radius:999px;background:var(--cyan);color:#062B28;line-height:1.2}
+.price-pill span{font-size:.9rem;font-weight:500}
+.price-pill b{font-size:1.7rem;font-weight:700;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.versus p{margin-top:16px;color:var(--ink-2);max-width:36ch;margin-left:auto;margin-right:auto}
+.trio{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.trio div{padding-top:20px;border-top:1px solid color-mix(in srgb,var(--ink) 16%,transparent)}
+.trio svg{width:26px;height:26px;color:var(--cyan-ink);margin-bottom:12px}
+.trio p{font-size:1.1rem;line-height:1.35}
+@media (max-width:760px){.trio{grid-template-columns:1fr}}
+
+/* ---------- Savings highlight ---------- */
+.save-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,470px);gap:clamp(32px,5vw,80px);align-items:start}
+.save-copy{position:sticky;top:110px}
+@media (max-width:980px){.save-grid{grid-template-columns:1fr}.save-copy{position:static}}
+.save-badge{display:inline-flex;align-items:center;gap:10px;padding:8px 16px 8px 8px;border-radius:999px;background:rgba(0,185,173,.16);border:1px solid rgba(0,185,173,.4);font-size:.9rem;font-weight:600;color:#fff;margin-bottom:22px}
+.save-badge i{width:28px;height:28px;border-radius:50%;background:var(--cyan);display:grid;place-items:center;color:#062B28;font-style:normal;font-weight:700}
+.save-list{margin-top:30px;display:grid;gap:0;border-top:1px solid var(--line-deep)}
+.save-list li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:14px;padding:16px 0;border-bottom:1px solid var(--line-deep);color:var(--on-deep-2)}
+.save-list b{color:#fff;font-weight:600}
+.save-list svg{width:22px;height:22px;color:var(--cyan);margin-top:2px}
+.calc-shell{border-radius:28px;background:#F4FAF9;padding:10px 6px 4px;box-shadow:0 30px 80px rgba(0,0,0,.28)}
+.calc-title{display:flex;justify-content:space-between;align-items:center;padding:12px 16px 4px;color:#194141}
+.calc-title b{font-weight:600}
+.calc-title span{font-size:.8125rem;color:#4E6664}
+
+/* ---------- 02 Confidence ---------- */
+.big-stat{font-weight:800;font-size:clamp(4.4rem,11vw,9rem);letter-spacing:-.06em;line-height:.9;font-variant-numeric:tabular-nums}
+.big-stat span{font-size:.45em;color:var(--cyan-hl);letter-spacing:-.02em}
+.trust{display:grid;border-top:1px solid color-mix(in srgb,var(--ink) 16%,transparent)}
+.trust li{display:grid;grid-template-columns:32px minmax(0,1fr) auto;gap:14px;align-items:center;padding:17px 0;border-bottom:1px solid color-mix(in srgb,var(--ink) 16%,transparent);font-size:1.08rem}
+.trust svg{width:24px;height:24px;color:var(--cyan-ink)}
+.trust small{font-size:.75rem;font-weight:700;letter-spacing:.1em;color:var(--ink-2);text-align:right}
+@media (max-width:560px){.trust li{grid-template-columns:32px minmax(0,1fr)}.trust small{grid-column:2;text-align:left;margin-top:-6px}}
+.stage{position:relative;border-radius:28px;background:radial-gradient(circle at 50% 50%,rgba(255,255,255,.85),rgba(255,255,255,0) 70%);display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:420px;padding:20px 0}
+.stage img{max-height:620px;width:auto;filter:drop-shadow(0 30px 40px rgba(25,65,65,.18))}
+.stage figcaption{margin-top:6px;text-align:center;font-size:.8rem;font-weight:600;letter-spacing:.14em;color:var(--ink-2)}
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid color-mix(in srgb,var(--ink) 16%,transparent);border-bottom:1px solid color-mix(in srgb,var(--ink) 16%,transparent)}
+.fact{padding:28px 22px 28px 0}
+.fact + .fact{padding-left:22px;border-left:1px solid color-mix(in srgb,var(--ink) 16%,transparent)}
+.fact b{display:block;font-weight:300;font-size:clamp(1.9rem,3.4vw,2.8rem);letter-spacing:-.03em;line-height:1.05}
+.fact span{display:block;margin-top:8px;font-size:.9rem;color:var(--ink-2)}
+@media (max-width:900px){.facts{grid-template-columns:repeat(2,minmax(0,1fr))}.fact:nth-child(3){padding-left:0;border-left:0}.fact:nth-child(n+3){border-top:1px solid color-mix(in srgb,var(--ink) 16%,transparent)}}
+.path{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.path li{padding:22px 18px;border-radius:18px;background:color-mix(in srgb,var(--bg) 70%,transparent)}
+.path small{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--mint);color:var(--cyan-ink);font-weight:700;font-size:.8rem;margin-bottom:14px}
+.path li:nth-child(4) small{background:var(--cyan);color:#062B28}
+.path h4{font-size:1rem;font-weight:600}
+.path p{margin-top:4px;font-size:.875rem;color:var(--ink-2)}
+@media (max-width:900px){.path{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.path{grid-template-columns:1fr}}
+.nsf{display:grid;grid-template-columns:minmax(0,200px) minmax(0,1fr);gap:28px;align-items:center;padding:24px;border-radius:var(--radius);background:color-mix(in srgb,var(--bg) 70%,transparent)}
+.nsf img{border-radius:8px;background:#fff}
+@media (max-width:560px){.nsf{grid-template-columns:1fr}}
+
+/* ---------- 03 Everyday bands ---------- */
+.band{padding:clamp(80px,9vw,124px) 0}
+.band .duo{align-items:center}
+.band__visual{display:grid;place-items:center;min-height:440px;position:relative}
+.band__visual img{max-height:600px;width:auto;filter:drop-shadow(0 30px 40px rgba(25,65,65,.16))}
+.band__visual figcaption{margin-top:14px;font-size:.8rem;font-weight:600;letter-spacing:.14em;color:var(--ink-2);text-align:center}
+.band .lede{margin-top:22px}
+.band__link{margin-top:30px;display:flex;flex-wrap:wrap;gap:10px}
+.glasses{display:flex;gap:14px;margin-top:36px;color:var(--ink)}
+.glasses svg{width:40px;height:62px;overflow:visible}
+.glasses-cap{display:flex;justify-content:space-between;max-width:320px;margin-top:10px;font-size:.75rem;font-weight:700;letter-spacing:.12em;color:var(--ink-2)}
+.checks{margin-top:30px;border-radius:var(--radius);background:color-mix(in srgb,var(--bg) 80%,transparent);padding:6px 22px}
+.checks li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:14px;padding:15px 0;align-items:center}
+.checks li + li{border-top:1px solid var(--line)}
+.checks svg{width:22px;height:22px;color:var(--cyan-ink)}
+.timeline{margin-top:34px;display:grid;gap:14px;position:relative;padding-left:30px}
+.timeline::before{content:"";position:absolute;left:8px;top:18px;bottom:18px;width:2px;background:linear-gradient(#E0664A,#3B82D6,#6B7475)}
+.slot{display:grid;grid-template-columns:120px minmax(0,1fr);gap:18px;align-items:center;position:relative}
+.slot::before{content:"";position:absolute;left:-29px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:2.5px solid var(--c)}
+.slot time{font-weight:800;font-size:1.9rem;letter-spacing:-.04em;font-variant-numeric:tabular-nums}
+.slot time small{font-size:.7rem;font-weight:700;letter-spacing:.1em;margin-left:3px}
+.slot div{display:flex;align-items:center;gap:14px;padding:14px 18px;border-radius:16px;background:color-mix(in srgb,var(--bg) 85%,transparent);border:1px solid color-mix(in srgb,var(--cyan) 25%,transparent)}
+.slot svg{width:26px;height:26px;color:var(--ink)}
+.slot b{display:block;font-weight:700;font-size:1.1rem}
+.slot em{font-style:normal;font-size:.78rem;font-weight:700;letter-spacing:.1em;color:var(--c)}
+.pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.pills span{display:inline-flex;align-items:center;gap:9px;padding:10px 16px;border-radius:999px;border:1px solid color-mix(in srgb,var(--cyan) 35%,transparent);background:color-mix(in srgb,var(--bg) 70%,transparent);font-size:.93rem}
+.pills svg{width:18px;height:18px;color:var(--cyan-ink)}
+.led{display:grid;gap:8px;margin-top:30px;padding:20px 22px;border-left:3px solid var(--cyan);background:color-mix(in srgb,var(--bg) 60%,transparent);border-radius:0 16px 16px 0}
+.led b{font-size:.78rem;font-weight:700;letter-spacing:.14em}
+.led span{display:flex;align-items:center;gap:10px}
+.led i{width:11px;height:11px;border-radius:50%}
+.quad{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:34px}
+.quad div{padding:6px 14px;text-align:center;font-size:.95rem;line-height:1.35}
+.quad div + div{border-left:1px solid color-mix(in srgb,var(--ink) 16%,transparent)}
+.quad svg{display:block;width:26px;height:26px;color:var(--cyan-ink);margin:0 auto 10px}
+@media (max-width:560px){.quad{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:22px}.quad div:nth-child(3){border-left:0}}
+@media (max-width:900px){.band__visual{min-height:0;order:-1}.band__visual img{max-height:380px}}
+
+/* ---------- 04 Range ---------- */
+.rfilters{display:flex;flex-wrap:wrap;gap:8px;margin-top:36px}
+.rfilters button{min-height:44px;padding:0 18px;border-radius:999px;border:1px solid var(--line);background:var(--bg);font-weight:500;font-size:.92rem;cursor:pointer}
+.rfilters button[aria-pressed="true"]{background:var(--deep);border-color:var(--deep);color:#fff}
+.rfilters .cnt{margin-left:auto;align-self:center;font-size:.875rem;color:var(--ink-2)}
+.group{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:36px;padding:44px 0;border-top:1px solid var(--line)}
+.group:first-of-type{margin-top:36px}
+.group[hidden]{display:none}
+.group__name{font-weight:300;font-size:2.2rem;letter-spacing:-.035em;line-height:1}
+.group__name b{font-weight:700}
+.group__tag{margin-top:10px;color:var(--cyan-ink);font-weight:500}
+.group__desc{margin-top:10px;font-size:.93rem;color:var(--ink-2)}
+@media (max-width:900px){.group{grid-template-columns:1fr;gap:20px}}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+@media (max-width:1100px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.cards{grid-template-columns:1fr}}
+.pcard{display:flex;flex-direction:column;border-radius:var(--radius);border:1px solid var(--line);background:var(--bg);overflow:hidden;text-align:left;padding:0;cursor:pointer;transition:border-color .2s}
+.pcard[hidden]{display:none}
+.pcard:hover{border-color:var(--cyan)}
+.pcard:hover .pcard__img img{transform:scale(1.03)}
+.pcard__img{position:relative;aspect-ratio:1/1;background:var(--plate)}
+.pcard__img img{width:100%;height:100%;object-fit:contain;padding:7%;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.pcard__badge{position:absolute;left:12px;top:12px;font-size:.75rem;font-weight:600;padding:5px 10px;border-radius:999px;background:var(--deep);color:#fff}
+.pcard__body{padding:18px 20px 20px;display:grid;gap:6px;flex:1}
+.pcard__type{font-size:.8125rem;color:var(--ink-2)}
+.pcard__name{font-weight:700;font-size:1.12rem;letter-spacing:-.01em}
+.pcard__line{font-size:.9rem;color:var(--ink-2);line-height:1.5}
+.pcard__foot{display:flex;justify-content:space-between;align-items:baseline;margin-top:auto;padding-top:12px}
+.pcard__srp{font-size:1.2rem;font-weight:600;font-variant-numeric:tabular-nums}
+.pcard__srp small{font-size:.72rem;color:var(--ink-2);font-weight:400;margin-right:6px}
+.pcard__more{font-size:.85rem;font-weight:600;color:var(--cyan-ink)}
+details.compare{margin-top:48px;border-radius:var(--radius);border:1.5px solid color-mix(in srgb,var(--cyan) 55%,transparent);background:color-mix(in srgb,var(--cyan) 7%,var(--bg));overflow:hidden}
+details.compare summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:18px;padding:22px 24px}
+details.compare summary::-webkit-details-marker{display:none}
+.compare__icon{flex:none;width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:var(--cyan);color:#062B28}
+.compare__text{display:grid;gap:2px;margin-right:auto}
+.compare__text b{font-weight:600;font-size:1.15rem}
+.compare__text span{font-size:.9rem;color:var(--ink-2)}
+.compare__btn{flex:none;display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 18px;border-radius:999px;background:var(--deep);color:#fff;font-weight:600;font-size:.9rem}
+.compare__btn svg{transition:transform .25s}
+details.compare[open] .compare__btn svg{transform:rotate(180deg)}
+details.compare .when-open{display:none}
+details.compare[open] .when-open{display:inline}
+details.compare[open] .when-closed{display:none}
+@media (max-width:560px){details.compare summary{flex-wrap:wrap;padding:18px}.compare__btn{width:100%;justify-content:center}}
+.table-wrap{position:relative;overflow-x:auto;-webkit-overflow-scrolling:touch;background:var(--bg);margin:0 12px 12px;border-radius:12px;padding:8px 16px 16px}
+.spec-table{width:100%;min-width:880px;border-collapse:collapse;font-size:.875rem;font-variant-numeric:tabular-nums}
+.spec-table th,.spec-table td{padding:12px 10px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+.spec-table thead th{font-weight:600}
+.spec-table tbody th{font-weight:500;color:var(--ink-2);white-space:nowrap}
+
+/* ---------- Product dialog ---------- */
+dialog.pd{width:min(1100px,calc(100vw - 32px));max-height:calc(100dvh - 32px);padding:0;border:0;border-radius:24px;background:var(--bg);color:var(--ink);overflow:hidden}
+dialog.pd::backdrop{background:rgba(7,20,20,.62);backdrop-filter:blur(4px)}
+.pd__grid{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);grid-template-rows:minmax(0,1fr);height:min(820px,calc(100dvh - 32px))}
+.pd__media{background:var(--plate);display:grid;grid-template-rows:minmax(0,1fr) auto;min-height:0}
+.pd__main{position:relative;min-height:0;display:grid;place-items:center;padding:28px}
+.pd__main img{max-height:min(58vh,540px);max-width:100%;width:auto;height:auto;object-fit:contain}
+.pd__thumbs{display:flex;gap:8px;overflow-x:auto;padding:0 20px 20px}
+.pd__thumbs button{flex:0 0 64px;height:64px;border-radius:12px;border:1.5px solid transparent;background:rgba(255,255,255,.7);padding:4px;cursor:pointer}
+.pd__thumbs button[aria-current="true"]{border-color:#194141}
+.pd__thumbs img{width:100%;height:100%;object-fit:contain}
+.pd__info{padding:40px 36px;overflow-y:auto;min-height:0}
+.pd__close{position:absolute;right:14px;top:14px;z-index:2;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--bg);color:var(--ink);display:grid;place-items:center;cursor:pointer}
+.pd__series{font-size:.875rem;color:var(--cyan-ink);font-weight:600}
+.pd__name{font-weight:700;font-size:clamp(1.9rem,3vw,2.5rem);letter-spacing:-.035em;line-height:1.05;margin-top:6px}
+.pd__line{margin-top:14px;color:var(--ink-2)}
+.pd__price{margin-top:22px;display:flex;align-items:baseline;gap:10px}
+.pd__price b{font-size:1.9rem;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.pd__price span{font-size:.85rem;color:var(--ink-2)}
+.pd__specs{margin-top:26px;display:grid;border-top:1px solid var(--line)}
+.pd__specs div{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:12px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.9rem}
+.pd__specs dt{color:var(--ink-2)}
+.pd__specs dd{font-weight:500;font-variant-numeric:tabular-nums}
+.pd__warranty{margin-top:22px;padding:18px;border-radius:14px;background:var(--mint);font-size:.9rem}
+.pd__warranty b{display:block;margin-bottom:4px}
+.pd__actions{margin-top:24px;display:flex;flex-wrap:wrap;gap:10px}
+.pd__nav{position:absolute;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;border:1px solid rgba(25,65,65,.2);background:rgba(255,255,255,.85);color:#194141;display:grid;place-items:center;cursor:pointer}
+.pd__nav--prev{left:14px}.pd__nav--next{right:14px}
+@media (max-width:860px){.pd__grid{grid-template-columns:1fr;grid-template-rows:auto auto;height:auto;max-height:calc(100dvh - 32px);overflow-y:auto}.pd__main img{max-height:42vh}.pd__info{overflow:visible;padding:28px 22px}}
+
+/* ---------- 05 Service ---------- */
+.sla{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:32px;align-items:center;padding:30px 34px;border-radius:24px;background:var(--deep);color:#fff}
+.sla b{font-weight:800;font-size:clamp(2.8rem,5vw,4rem);letter-spacing:-.05em;line-height:1;color:#3FD6CA}
+.sla h3{font-weight:700;font-size:1.3rem}
+.sla p{color:var(--on-deep-2);margin-top:4px}
+@media (max-width:760px){.sla{grid-template-columns:1fr;gap:14px}}
+.steps{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px;counter-reset:s}
+.steps li{position:relative;padding-top:52px;font-size:.9rem;line-height:1.4}
+.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:0;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-size:.8rem;font-weight:700;background:var(--mint);color:var(--cyan-ink)}
+.steps li::after{content:"";position:absolute;left:46px;right:-4px;top:19px;height:1px;background:var(--line)}
+.steps li:last-child::after{display:none}
+@media (max-width:900px){.steps{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:28px}.steps li:nth-child(3)::after{display:none}}
+@media (max-width:520px){.steps{grid-template-columns:repeat(2,minmax(0,1fr))}.steps li::after{display:none}}
+.coverage{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
+.coverage div{padding:24px;border-radius:var(--radius);background:var(--mint)}
+.coverage b{display:block;font-weight:800;font-size:2.4rem;letter-spacing:-.04em;line-height:1;color:var(--ink)}
+.coverage h4{margin-top:12px;font-weight:600}
+.coverage p{margin-top:6px;font-size:.9rem;color:var(--ink-2)}
+@media (max-width:900px){.coverage{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.coverage{grid-template-columns:1fr}}
+.terms{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.terms li{display:grid;grid-template-columns:48px minmax(0,1fr);gap:14px;align-items:center;padding:16px;border-radius:18px;background:var(--blue)}
+.terms i{width:48px;height:48px;border-radius:50%;background:var(--deep);color:#fff;display:grid;place-items:center}
+.terms svg{width:22px;height:22px}
+.terms span{font-size:.93rem;line-height:1.35}
+.terms b{font-weight:700}
+.sec--mint .steps li::before{background:var(--bg)}
+.sec--mint .coverage div{background:var(--bg)}
+@media (max-width:1000px){.terms{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.terms{grid-template-columns:1fr}}
+.subhead{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:40px;margin-bottom:30px;align-items:end}
+.subhead h3{font-weight:700;font-size:1.6rem;letter-spacing:-.02em;line-height:1.2}
+@media (max-width:900px){.subhead{grid-template-columns:1fr;gap:10px}}
+
+/* ---------- 06 How ---------- */
+.how{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+.how li{padding:24px 20px;border-radius:var(--radius);border:1px solid var(--line);background:var(--bg)}
+.how small{display:block;font-weight:700;color:var(--cyan-ink);margin-bottom:22px;font-variant-numeric:tabular-nums}
+.how h4{font-size:1.05rem;font-weight:700}
+.how p{margin-top:6px;font-size:.9rem;color:var(--ink-2)}
+.how li:nth-child(2){background:var(--deep);color:#fff;border-color:var(--deep)}
+.how li:nth-child(2) small{color:var(--cyan)}.how li:nth-child(2) p{color:var(--on-deep-2)}
+@media (max-width:1000px){.how{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.how{grid-template-columns:1fr}}
+
+/* ---------- FAQ ---------- */
+.faq{border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;align-items:center;padding:22px 0;font-weight:600;font-size:1.08rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary i{flex:none;width:32px;height:32px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;transition:transform .25s}
+.faq details[open] summary i{transform:rotate(45deg);background:var(--cyan);border-color:var(--cyan);color:#062B28}
+.faq .a{padding:0 0 24px;color:var(--ink-2);max-width:74ch}
+.faq .a ul{margin-top:10px;display:grid;gap:6px}
+.faq .a li{padding-left:18px;position:relative}
+.faq .a li::before{content:"";position:absolute;left:0;top:.72em;width:8px;height:1.5px;background:var(--cyan)}
+.faq .a p + p{margin-top:10px}
+
+/* ---------- CTA + form ---------- */
+.cta{background:var(--deep);color:#fff;padding:clamp(88px,11vw,150px) 0 clamp(72px,9vw,120px);position:relative;overflow:hidden}
+.cta::after{content:"";position:absolute;width:720px;height:720px;right:-260px;top:-300px;border-radius:50%;border:90px solid rgba(0,185,173,.1);pointer-events:none}
+.cta__grid{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(40px,6vw,88px);align-items:start}
+@media (max-width:980px){.cta__grid{grid-template-columns:1fr}}
+.cta .hl{color:#fff}.cta .hl span{color:#3FD6CA}
+.cta .lede{color:var(--on-deep-2);margin-top:22px}
+.cta__side{position:sticky;top:110px}
+@media (max-width:980px){.cta__side{position:static}}
+.contact{margin-top:34px;display:grid;gap:14px}
+.contact a{display:flex;gap:14px;align-items:flex-start;text-decoration:none;color:#fff}
+.contact a:hover{text-decoration:underline;text-underline-offset:3px}
+.contact svg{width:20px;height:20px;flex:none;margin-top:3px;color:var(--cyan)}
+.contact span{color:var(--on-deep-2)}
+.form{background:#fff;color:#194141;border-radius:28px;padding:clamp(22px,3.2vw,40px);display:grid;gap:18px}
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:5px;border-radius:16px;background:#EAF4F2}
+.seg label{display:grid;gap:2px;padding:12px 14px;border-radius:12px;cursor:pointer;font-weight:600;font-size:.95rem;line-height:1.3}
+.seg label small{font-weight:400;font-size:.78rem;color:#5E6B6B}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg label:has(input:checked){background:#fff;box-shadow:0 1px 3px rgba(0,70,65,.14)}
+.seg label:has(input:focus-visible){outline:3px solid #00B9AD;outline-offset:2px}
+.form h3{font-size:1.3rem;font-weight:700;letter-spacing:-.01em}
+.form .sub{font-size:.92rem;color:#5E6B6B;margin-top:-8px}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:560px){.f-row{grid-template-columns:1fr}}
+.f label,.f legend{display:block;font-size:.875rem;font-weight:600;margin-bottom:7px;padding:0}
+.f label small,.f legend small{font-weight:400;color:#5E6B6B}
+.f input,.f select,.f textarea{width:100%;min-height:50px;padding:12px 14px;border-radius:12px;border:1px solid #CFE0DE;background:#fff;color:#194141;font-size:1rem}
+.f textarea{min-height:90px;resize:vertical}
+.f input:focus,.f select:focus,.f textarea:focus{outline:none;border-color:#00B9AD;box-shadow:0 0 0 3px rgba(0,185,173,.22)}
+.f [aria-invalid="true"]{border-color:#A1433A}
+.err{margin-top:6px;font-size:.8125rem;color:#A1433A}
+.err:empty{display:none}
+fieldset.f{border:0;margin:0;padding:0;min-width:0}
+.models{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.models label,.yn label{display:flex;align-items:center;gap:10px;min-height:44px;padding:0 12px;border-radius:12px;border:1px solid #CFE0DE;font-weight:500;font-size:.9rem;cursor:pointer;margin:0}
+.models input,.yn input,.agree input{width:18px;height:18px;min-height:0;accent-color:#00B9AD;flex:none;margin:0}
+.models label:has(input:checked),.yn label:has(input:checked){border-color:#00B9AD;background:#E9F7F5}
+@media (max-width:420px){.models{grid-template-columns:1fr}}
+.survey{display:grid;gap:18px;padding:22px;border-radius:18px;background:#F4FAF9;border:1px solid #DCEDEB}
+.survey[hidden]{display:none}
+.survey h4{font-size:1rem;font-weight:700}
+.survey .hint{font-size:.85rem;color:#5E6B6B;margin-top:-10px}
+.q{display:grid;gap:8px}
+.q > span{font-size:.92rem;font-weight:600}
+.yn{display:flex;flex-wrap:wrap;gap:8px}
+.yn label{min-height:40px}
+.dist{display:none;margin-top:4px}
+.dist.on{display:block}
+.dist input{min-height:44px}
+.ready{display:grid;gap:8px;padding:16px 18px;border-radius:14px;font-size:.9rem;background:#fff;border:1px solid #DCEDEB}
+.ready b{font-size:.95rem}
+.ready li{display:grid;grid-template-columns:18px minmax(0,1fr);gap:10px}
+.ready li i{width:10px;height:10px;border-radius:50%;margin-top:.45em;background:var(--c)}
+.agree{display:flex;gap:12px;align-items:flex-start;font-size:.88rem;line-height:1.45;cursor:pointer}
+.agree input{margin-top:2px}
+.form .btn{width:100%;min-height:54px;font-size:1rem}
+.form .fine{font-size:.8125rem;color:#5E6B6B}
+.form-done{padding:18px;border-radius:14px;background:#E9F7F5;font-size:.925rem}
+.form-done a{color:#00665F;font-weight:600}
+
+.foot{background:#0B1D1D;color:#B9D4D1;padding:56px 0 calc(40px + env(safe-area-inset-bottom,0px));font-size:.9rem}
+.foot__grid{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;align-items:end}
+.foot__brands{display:flex;align-items:flex-end;gap:22px}
+/* Both wordmarks share the same letter height (~30px): Livotec letters fill 94% of its file height, Iontech letters 61.5% */
+.foot__brands .lv{height:32px;width:auto}
+.foot__brands .io{height:49px;width:auto;margin-bottom:-1px}
+.foot__brands .x{opacity:.5;align-self:center;margin-top:14px}
+@media (max-width:480px){.foot__brands{gap:14px}.foot__brands .lv{height:24px}.foot__brands .io{height:37px}}
+.foot p{max-width:70ch;margin-top:18px}
+.foot a{color:#fff}
+.foot nav{display:flex;flex-wrap:wrap;gap:6px 20px}
+.foot nav a{text-decoration:none;opacity:.8}
+.foot nav a:hover{opacity:1}
+@media (max-width:760px){.foot__grid{grid-template-columns:1fr}}
+.mobile-cta{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:40;display:none}
+.mobile-cta .btn{width:100%;box-shadow:0 10px 30px rgba(7,20,20,.35)}
+@media (max-width:980px){.mobile-cta.is-on{display:block}}
+@media (prefers-reduced-motion: no-preference){
+  .js .hero__copy > *{opacity:0;transform:translateY(18px);animation:rise .9s cubic-bezier(.2,.7,.2,1) forwards}
+  .js .hero__copy > *:nth-child(2){animation-delay:.12s}.js .hero__copy > *:nth-child(3){animation-delay:.24s}.js .hero__copy > *:nth-child(4){animation-delay:.36s}
+  @keyframes rise{to{opacity:1;transform:none}}
+}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none !important;animation:none !important}}
+
+/* =========================================================================
+   Savings calculator (Livotec Calculator: style.css, scoped under .lvc)
+   ========================================================================= */
+.lvc{--brand: #00B9AD;        
+  --brand-deep: #00665F;   
+  --brand-ink: #004A45;
+  --brand-mist: #E6F7F5;
+  --brand-line: #CFE9E6;
+  --paper: #F4FAF9;
+  --surface: #FFFFFF;
+  --ink: #102A28;
+  --ink-2: #4E6664;
+  --loss: #A1433A;
+  --font: "Avenir Next", "Avenir", "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;}
+*, *::before, *::after{box-sizing: border-box;}
+.lvc{margin: 0; background: var(--paper); color: var(--ink);
+  font-family: var(--font); font-size: 16px; line-height: 1.45;
+  font-variant-numeric: tabular-nums; -webkit-font-smoothing: antialiased;}
+.lvc [hidden]{display: none !important;}
+.lvc h2, .lvc p, .lvc dl, .lvc dd{margin: 0;}
+.lvc button, .lvc input, .lvc select{font: inherit; color: inherit;}
+.lvc :focus-visible{outline: 3px solid var(--brand); outline-offset: 2px;}
+.lvc .app{max-width: 440px; margin: 0 auto;
+  padding: 24px max(16px, env(safe-area-inset-right)) calc(28px + env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left));
+  display: grid; gap: 14px;}
+.lvc .brand{text-align: center; padding: 8px 0 6px;}
+.lvc .brand__logo{display: block; width: min(200px, 60%); height: auto; margin: 0 auto;}
+.lvc .brand__title{margin-top: 8px; font-size: 0.9375rem; font-weight: 500; color: var(--ink-2); letter-spacing: 0.01em;}
+.lvc .card{background: var(--surface); border: 1px solid var(--brand-line); border-radius: 20px;
+  padding: 18px; display: grid; gap: 14px;}
+.lvc .field label{display: block; margin-bottom: 6px; font-size: 0.9375rem; font-weight: 600;}
+.lvc .input{display: block; width: 100%; min-height: 52px; padding: 0 14px;
+  border: 1px solid var(--brand-line); border-radius: 12px; background: var(--surface);
+  font-size: 1.0625rem; -webkit-appearance: none; appearance: none;
+  transition: border-color .15s, box-shadow .15s;}
+.lvc .input:focus{outline: none; border-color: var(--brand); box-shadow: 0 0 0 3px rgba(0, 185, 173, .22);}
+.lvc .input[aria-invalid="true"]{border-color: var(--loss);}
+.lvc input[type="number"]{-moz-appearance: textfield;}
+.lvc input[type="number"]::-webkit-inner-spin-button, .lvc input[type="number"]::-webkit-outer-spin-button{-webkit-appearance: none; margin: 0;}
+.lvc .select{padding-right: 44px; cursor: pointer; font-weight: 500;
+  background: var(--surface) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%2300665F' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 16px center;}
+.lvc .affix{position: relative;}
+.lvc .affix__sign{position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--ink-2); pointer-events: none;}
+.lvc .affix .input{padding-left: 32px;}
+.lvc .stepper{display: grid; grid-template-columns: 52px minmax(0, 1fr) 52px; gap: 8px;}
+.lvc .stepper .input{text-align: center; font-size: 1.25rem; font-weight: 600;}
+.lvc .stepper__btn{min-height: 52px; border: 1px solid var(--brand-line); border-radius: 12px;
+  background: var(--brand-mist); color: var(--brand-deep);
+  font-size: 1.5rem; line-height: 1; cursor: pointer; touch-action: manipulation;}
+.lvc .stepper__btn:active{background: var(--brand-line);}
+.lvc .field__error{margin-top: 6px; font-size: 0.8125rem; color: var(--loss);}
+.lvc .field__error:empty{display: none;}
+.lvc .field__note{margin-top: 8px; font-size: 0.8125rem; color: var(--brand-deep);}
+.lvc .affix--suffix .input{padding-left: 14px; padding-right: 44px;}
+.lvc .affix__unit{position: absolute; right: 14px; top: 50%; transform: translateY(-50%); color: var(--ink-2); pointer-events: none;}
+.lvc .card__label{font-size: 0.9375rem; font-weight: 600;}
+.lvc .check small{display: block; font-size: 0.8125rem; font-weight: 400; color: var(--ink-2);}
+.lvc .tabs{display: grid; grid-template-columns: 1fr 1fr; gap: 6px; padding: 5px; background: var(--brand-mist); border-radius: 14px;}
+.lvc .tab{min-height: 44px; padding: 0 10px; border: 0; border-radius: 10px;
+  background: transparent; color: var(--brand-deep); font-size: 0.9375rem; font-weight: 600;
+  cursor: pointer; touch-action: manipulation;}
+.lvc .tab[aria-selected="true"]{background: var(--surface); box-shadow: 0 1px 3px rgba(0, 70, 65, .12);}
+.lvc .panel{display: grid; gap: 14px;}
+.lvc .result--split{text-align: left;}
+.lvc .split{display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px;}
+.lvc .split__side{min-width: 0;}
+.lvc .split__side + .split__side{padding-left: 10px; border-left: 1px solid rgba(255, 255, 255, .2);}
+.lvc .split__side--diff .split__figure{color: #7FE3DA;}
+.lvc .split__side--diff.is-invest .split__figure{color: #FFD9A6;}
+.lvc .split__label{font-size: 0.8125rem; color: #CDEFEC; line-height: 1.25;}
+.lvc .split__figure{margin-top: 2px; font-size: clamp(1.1rem, 5.4vw, 1.75rem); font-weight: 700; letter-spacing: -0.02em; white-space: nowrap;}
+.lvc .split__sub{font-size: 0.8125rem; color: #CDEFEC;}
+.lvc .compare-bars{margin-top: 16px; padding-top: 14px; border-top: 1px solid rgba(255, 255, 255, .2); display: grid; gap: 10px;}
+.lvc .bar-row{display: grid; gap: 4px;}
+.lvc .bar-row__head{display: flex; justify-content: space-between; gap: 10px; font-size: 0.8125rem; color: #CDEFEC;}
+.lvc .bar-row__total{font-weight: 700; color: #fff;}
+.lvc .bar{display: flex; height: 18px; border-radius: 6px; overflow: hidden; background: rgba(255, 255, 255, .1);}
+.lvc .bar__seg{height: 100%;}
+.lvc .bar__seg--refill{background: #9FD9D3;}
+.lvc .bar__seg--plan{background: var(--brand);}
+.lvc .bar__seg--dispenser{background: #4FBFB6;}
+.lvc .bar__seg--filters{background: #7FE3DA;}
+.lvc .bar-legend{display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 0.75rem; color: #CDEFEC;}
+.lvc .bar-legend span{display: flex; align-items: center; gap: 5px;}
+.lvc .bar-legend i{width: 10px; height: 10px; border-radius: 3px;}
+.lvc .filters{list-style: none; margin: 14px 0 0; padding: 12px 0 0; border-top: 1px solid rgba(255, 255, 255, .2); display: grid; gap: 10px;}
+.lvc .filters__head{display: flex; justify-content: space-between; font-size: 0.8125rem; color: #CDEFEC;}
+.lvc .filter-row{display: grid; gap: 4px;}
+.lvc .filter-row__head{display: flex; justify-content: space-between; align-items: baseline; gap: 10px;}
+.lvc .filter-row__name{font-size: 0.875rem; font-weight: 600;}
+.lvc .filter-row__amt{font-size: 0.9375rem; font-weight: 700; white-space: nowrap;}
+.lvc .filter-row__math{font-size: 0.6875rem; color: #A9DCD7;}
+.lvc .filter-row__bar{height: 8px; border-radius: 4px; background: rgba(255, 255, 255, .12); overflow: hidden;}
+.lvc .filter-row__fill{display: block; height: 100%; border-radius: 4px; background: #7FE3DA;}
+.lvc .plans{display: grid; gap: 8px; margin-top: 10px;}
+.lvc .plan{display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  min-height: 56px; padding: 0 14px; border: 1px solid var(--brand-line); border-radius: 12px;
+  background: var(--surface); color: var(--ink); font-family: inherit; font-size: 0.9375rem;
+  cursor: pointer; text-align: left; touch-action: manipulation;}
+.lvc .plan__term{font-weight: 600;}
+.lvc .plan__amt{font-weight: 700; color: var(--brand-deep); white-space: nowrap;}
+.lvc .plan__amt small{display: block; font-size: 0.6875rem; font-weight: 400; color: var(--ink-2); text-align: right;}
+.lvc .plan[aria-checked="true"]{border-color: var(--brand); background: var(--brand-mist);}
+.lvc .notice{margin-top: 8px; font-size: 0.8125rem; color: #6A4A12;}
+.lvc .check{position: relative; display: flex; align-items: center; gap: 12px; min-height: 44px; font-weight: 500; cursor: pointer;}
+.lvc .check input{position: absolute; opacity: 0; width: 1px; height: 1px; margin: 0;}
+.lvc .check__box{flex: none; width: 26px; height: 26px; border-radius: 7px;
+  border: 2px solid var(--brand-line); background: var(--surface);
+  display: grid; place-items: center; transition: background .15s, border-color .15s;}
+.lvc .check__box::after{content: ""; width: 7px; height: 13px; margin-top: -3px;
+  border: solid #fff; border-width: 0 2.5px 2.5px 0; transform: rotate(45deg); opacity: 0;}
+.lvc .check input:checked + .check__box{background: var(--brand); border-color: var(--brand);}
+.lvc .check input:checked + .check__box::after{opacity: 1;}
+.lvc .check input:focus-visible + .check__box{outline: 3px solid var(--brand); outline-offset: 2px;}
+.lvc .result{position: relative; overflow: hidden;
+  background: var(--brand-deep); color: #fff; border-radius: 20px;
+  padding: 22px 20px 18px; text-align: center;}
+.lvc .result::before{content: ""; position: absolute; width: 260px; height: 260px; right: -90px; top: -110px;
+  border-radius: 50%; border: 28px solid rgba(0, 185, 173, .28); pointer-events: none;}
+.lvc .result > *{position: relative;}
+.lvc .result__label{font-size: 1rem; color: #CDEFEC;}
+.lvc .result__figure{margin-top: 4px; font-size: clamp(2.5rem, 12vw, 3.25rem); line-height: 1.05; font-weight: 700; letter-spacing: -0.02em;}
+.lvc .result__period{margin-top: 2px; font-size: 0.9375rem; color: #CDEFEC;}
+.lvc .result__stats{margin-top: 16px; padding-top: 14px; border-top: 1px solid rgba(255, 255, 255, .2); display: grid; gap: 8px; text-align: left;}
+.lvc .result__stats div{display: flex; justify-content: space-between; align-items: baseline; gap: 12px;}
+.lvc .result__stats dt{font-size: 0.875rem; color: #CDEFEC;}
+.lvc .result__stats dd{font-weight: 700; white-space: nowrap;}
+.lvc .result.is-stale .result__figure, .lvc .result.is-stale .result__stats{opacity: .4;}
+.lvc .result__stale{margin-top: 12px; font-size: 0.875rem; color: #FFE1DC;}
+.lvc .sr-only{position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;}
+.lvc .years{margin: 16px -20px 0;}
+.lvc .years__track{display: flex; gap: 8px; padding: 8px 0;
+  overflow-x: auto; overflow-y: hidden;
+  scroll-snap-type: x mandatory; scroll-behavior: smooth;
+  overscroll-behavior-x: contain; -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 22%, #000 78%, transparent);
+          mask-image: linear-gradient(to right, transparent, #000 22%, #000 78%, transparent);}
+.lvc .years__track::-webkit-scrollbar{display: none;}
+.lvc .years__track:focus-visible{outline: 2px solid #fff; outline-offset: -2px;}
+.lvc .years__track::before, .lvc .years__track::after{content: ""; flex: 0 0 calc(50% - 46px - 8px);}
+.lvc .year-chip{flex: 0 0 92px; min-height: 64px; padding: 8px 4px;
+  scroll-snap-align: center;
+  display: grid; align-content: center; gap: 2px; position: relative;
+  border: 1px solid rgba(255, 255, 255, .2); border-radius: 14px;
+  background: rgba(255, 255, 255, .07); color: #CDEFEC;
+  cursor: pointer; touch-action: pan-x; font-family: inherit;
+  transition: background .15s, color .15s, transform .15s, border-color .15s;}
+.lvc .year-chip__year{font-size: .75rem;}
+.lvc .year-chip__amt{font-size: .8125rem; font-weight: 700; white-space: nowrap;}
+.lvc .year-chip.is-active{background: #fff; border-color: #fff; color: var(--brand-deep); transform: scale(1.05);}
+.lvc .year-chip.is-active .year-chip__amt.is-neg{color: var(--loss);}
+.lvc .year-chip.is-breakeven::after{content: ""; position: absolute; top: 6px; right: 8px;
+  width: 7px; height: 7px; border-radius: 50%; background: var(--brand);}
+.lvc .years__hint{margin-top: 4px; font-size: .8125rem; color: #CDEFEC;}
+@media (prefers-reduced-motion: reduce) {.lvc .years__track{scroll-behavior: auto;}
+.lvc .year-chip{transform: none !important;}}
+.lvc .disclaimer{text-align: center; font-size: 0.75rem; color: var(--ink-2);}
+@media (prefers-reduced-motion: reduce) {*, *::before, *::after{transition: none !important;}}
+.lvc{--font:"Be Vietnam Pro","Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;background:transparent;color:#102A28;border-radius:24px}
+.lvc .app{padding:14px 10px 18px;max-width:none}
+.lvc .card,.lvc .tabs{text-align:left}
+.lvc .result{text-align:center}
+.lvc .result--split{text-align:left}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head" id="siteHead">
+  <div class="wrap site-head__bar">
+    <a class="logo" href="#top" aria-label="Livotec Philippines, back to top">
+      <img class="on-dark" src="assets/img/brand/livotec-logo-white.png" alt="Livotec" width="900" height="155">
+      <img class="on-light" src="assets/img/brand/livotec-logo.png" alt="" width="900" height="155">
+    </a>
+    <nav class="nav" id="nav" aria-label="Sections">
+      <a href="#save">Savings</a>
+      <a href="#trust">Why Livotec</a>
+      <a href="#range">Products</a>
+      <a href="#service">Service</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn--primary btn--sm" href="#book" data-intent="survey">Book a survey</a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M2 5h14M2 9h14M2 13h14"/></svg>
+    </button>
+  </div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+</header>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top" aria-label="Introduction">
+  <div class="hero__film">
+    <video id="film" muted loop playsinline preload="metadata" poster="assets/video/livotec-film-poster.webp" aria-label="Livotec product film featuring the VitaGlow 11 Ultra">
+      <source src="assets/video/livotec-film-720.mp4" type="video/mp4" media="(max-width: 900px)">
+      <source src="assets/video/livotec-film-1080.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="wrap hero__inner">
+    <div class="hero__copy">
+      <h1 class="hl">Purified water, <span>made at home.</span></h1>
+      <p class="hero__sub">Livotec reverse-osmosis purifiers put clean water on tap for the whole family: hot, cold or ambient, with no gallons to order, carry or store.</p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#book" data-intent="survey">Book a pre-installation survey</a>
+        <a class="btn btn--ghost" href="#save">See how much you save</a>
+      </div>
+      <div class="hero__proof">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>From ₱19,990</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Free standard installation</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>5 years free maintenance</span>
+      </div>
+    </div>
+    <div class="film-ctrl">
+      <p>Now playing: VitaGlow 11 Ultra</p>
+      <div class="film-ctrl__row">
+        <button class="icon-btn" id="filmSound" type="button" aria-pressed="false" aria-label="Turn sound on">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8v4h3l4 3V5L6 8H3z"/><path class="snd-off" d="M14 8l4 4M18 8l-4 4"/><path class="snd-on" d="M13.5 7.5a3.5 3.5 0 010 5M15.8 5.2a6.5 6.5 0 010 9.6" style="display:none"/></svg>
+        </button>
+        <button class="icon-btn" id="filmPlay" type="button" aria-pressed="true" aria-label="Pause film">
+          <svg viewBox="0 0 20 20" fill="currentColor"><g class="ic-pause"><rect x="5" y="4" width="3.2" height="12" rx="1"/><rect x="11.8" y="4" width="3.2" height="12" rx="1"/></g><path class="ic-play" d="M6 4.5v11l9-5.5z" style="display:none"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 01 COST ================= -->
+<section class="sec sec--beige" id="save" aria-labelledby="save-h">
+  <div class="wrap">
+    <p class="kicker">The real cost of refills</p>
+    <h2 class="hl" id="save-h">Stop renting <span>your water.</span></h2>
+    <div class="block duo">
+      <div>
+        <div class="gallons" id="gallons" role="img" aria-label="208 gallon icons, one for every refill in a year"></div>
+        <div class="count"><b class="num">208</b><p>gallon refills a year,<br>paid for, carried, stored, repeated.</p></div>
+        <p class="note" style="margin-top:12px">Based on 4 five-gallon refills per week. Your household's usage and savings will vary.</p>
+      </div>
+      <div class="versus">
+        <figure><img src="assets/img/products/purelite-10-hydrogen-1.webp" alt="Livotec PureLite 10 Hydrogen under-sink purifier" width="1000" height="1000" loading="lazy"></figure>
+        <small>VERSUS</small>
+        <h3>one Livotec.</h3>
+        <div class="price-pill"><span>PureLite 10 Hydrogen</span><b>₱19,990</b></div>
+        <p>Every refill is money that leaves and never comes back. Livotec is water you own.</p>
+      </div>
+    </div>
+    <div class="block trio">
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 16.5V7.5h3.2a2.4 2.4 0 010 4.8H9.5M8 10h8M8 12.3h8"/></svg><p>Invest once,<br>not every week</p></div>
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6h12v10H2zM14 10h4l4 4v2h-8z"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg><p>No delivery fees,<br>no refill runs</p></div>
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 6.6 6 11a6 6 0 01-12 0c0-4.4 6-11 6-11z"/></svg><p>Purified water,<br>made at home</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SAVINGS CALCULATOR (highlight) ================= -->
+<section class="sec sec--deep" id="savings-calculator" aria-labelledby="calc-h">
+  <div class="wrap save-grid">
+    <div class="save-copy">
+      <p class="save-badge"><i>₱</i>Savings calculator</p>
+      <h2 class="hl hl--md" id="calc-h">Save more with a Livotec <span>than with gallon water.</span></h2>
+      <p class="lede" style="margin-top:22px">You will save more when you purchase a Livotec unit instead of sourcing gallon water. Enter your household size and what you pay per refill to see your break-even year and how much you keep after that.</p>
+      <ul class="save-list">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M5 12l5 5L20 7"/></svg><span><b>Long-term savings.</b> Year-by-year savings for up to 10 years, including filter replacements.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M5 12l5 5L20 7"/></svg><span><b>Monthly comparison.</b> What you spend on refills each month against an installment plan for your model.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M5 12l5 5L20 7"/></svg><span><b>Honest math.</b> Floor-standing models add the cost of a regular dispenser to the refill side, since a Livotec replaces one.</span></li>
+      </ul>
+      <div style="margin-top:30px;display:flex;flex-wrap:wrap;gap:10px">
+        <a class="btn btn--primary" href="#book" data-intent="survey">Book a pre-installation survey</a>
+        <a class="btn btn--ghost" href="#range" style="color:#fff">Compare models</a>
+      </div>
+    </div>
+    <div class="calc-shell">
+      <div class="calc-title"><b>Livotec savings calculator</b><span>Estimate only</span></div>
+<div class="lvc"><div class="app">
+
+    <form id="calculator" class="card" novalidate>
+      <div class="field">
+        <label for="members">Family / office members</label>
+        <div class="stepper">
+          <button type="button" class="stepper__btn" data-step="-1" aria-label="Remove one member">−</button>
+          <input class="input" id="members" type="number" inputmode="numeric" min="1" max="50" step="1" aria-describedby="members-error">
+          <button type="button" class="stepper__btn" data-step="1" aria-label="Add one member">+</button>
+        </div>
+        <p class="field__error" id="members-error"></p>
+      </div>
+
+      <div class="field">
+        <label for="refillPrice">Gallon refill price</label>
+        <div class="affix">
+          <span class="affix__sign" aria-hidden="true">₱</span>
+          <input class="input" id="refillPrice" type="number" inputmode="decimal" min="1" step="any" aria-describedby="refillPrice-error">
+        </div>
+        <p class="field__error" id="refillPrice-error"></p>
+      </div>
+
+      <div class="field">
+        <label for="product">Purifier model</label>
+        <select class="input select" id="product"></select>
+        <p class="field__note" id="dispenserNote" hidden></p>
+        <p class="notice" id="modelNotice" hidden>Filter prices for this model are not yet confirmed.</p>
+      </div>
+
+    </form>
+
+    <div class="tabs" role="tablist" aria-label="Calculator view">
+      <button type="button" class="tab" id="tab-savings" role="tab" aria-controls="panel-savings" aria-selected="true">Long-term savings</button>
+      <button type="button" class="tab" id="tab-monthly" role="tab" aria-controls="panel-monthly" aria-selected="false" tabindex="-1">Monthly comparison</button>
+    </div>
+
+    <!-- Tab 1: long-term savings -->
+    <div id="panel-savings" role="tabpanel" aria-labelledby="tab-savings" class="panel">
+      <section class="result" id="result" aria-labelledby="resultLabel">
+        <p class="result__label" id="resultLabel">Your potential savings</p>
+        <p class="result__figure" id="outSavings">—</p>
+        <p class="result__period" id="outPeriod">after 10 years</p>
+
+        <div class="years">
+          <div class="years__track" id="yearTrack" role="group" aria-label="Choose a year. Use left and right arrow keys." tabindex="0"></div>
+        </div>
+        <p class="years__hint">Swipe left or right to see each year</p>
+
+        <dl class="result__stats">
+          <div><dt>Break-even</dt><dd id="outBreakEven">—</dd></div>
+          <div><dt>Annual consumption</dt><dd id="outConsumption">—</dd></div>
+        </dl>
+        <p class="result__stale" id="resultStale" hidden>Complete the fields above to update.</p>
+        <p class="sr-only" id="liveRegion" aria-live="polite"></p>
+      </section>
+      <p class="disclaimer">Estimate based on 3 L per person per day, 365 days. Actual savings may vary.</p>
+    </div>
+
+    <!-- Tab 2: monthly comparison -->
+    <div id="panel-monthly" role="tabpanel" aria-labelledby="tab-monthly" class="panel" hidden>
+      <section class="result result--split" aria-label="Monthly comparison">
+        <div class="split">
+          <div class="split__side">
+            <p class="split__label">Gallon refills</p>
+            <p class="split__figure" id="outMonthlyRefill">—</p>
+            <p class="split__sub" id="outRefillSub">per month</p>
+          </div>
+          <div class="split__side">
+            <p class="split__label">Livotec plan</p>
+            <p class="split__figure" id="outMonthlyAmort">—</p>
+            <p class="split__sub" id="outMonthlyTerm">per month</p>
+          </div>
+          <div class="split__side split__side--diff" id="outDiff">
+            <p class="split__label" id="outDiffLabel">You keep</p>
+            <p class="split__figure" id="outDiffFigure">—</p>
+            <p class="split__sub" id="outDiffSub">per month</p>
+          </div>
+        </div>
+        <div class="compare-bars" id="compareBars" aria-hidden="true"></div>
+        <dl class="result__stats">
+          <div><dt>Monthly consumption</dt><dd id="outMonthlyLiters">—</dd></div>
+          <div><dt>Amount to finance</dt><dd id="outFinanced">—</dd></div>
+          <div><dt>Total after <span id="outTermLabel">24</span> months</dt><dd id="outTotalPayable">—</dd></div>
+        </dl>
+        <p class="result__stale" id="monthlyStale" hidden>Complete the fields above to update.</p>
+      </section>
+
+      <form class="card" id="planForm" novalidate>
+        <p class="card__label" id="planLabel">Installment plan</p>
+        <div class="plans" id="plans" role="radiogroup" aria-labelledby="planLabel"></div>
+
+        <div class="field">
+          <label for="interestRate">Interest rate per year</label>
+          <div class="affix affix--suffix">
+            <input class="input" id="interestRate" type="number" inputmode="decimal" min="0" max="60" step="any" aria-describedby="interestRate-error">
+            <span class="affix__unit" aria-hidden="true">%</span>
+          </div>
+          <p class="field__error" id="interestRate-error"></p>
+        </div>
+      </form>
+
+      <p class="disclaimer">Monthly refill estimate uses 3 L per person per day over 30 days. The plan payment covers the purifier only; filter replacements are shown in the long-term savings tab. Add-on interest: total payable = price + (price × rate × term). Actual financing terms depend on the dealer or bank.</p>
+    </div>
+  </div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 02 CONFIDENCE ================= -->
+<section class="sec sec--blue" id="trust" aria-labelledby="trust-h">
+  <div class="wrap">
+    <div class="duo" style="align-items:start">
+      <div>
+        <p class="kicker">Peace of mind, by design</p>
+        <h2 class="hl" id="trust-h">Confidence <span>in every glass.</span></h2>
+        <p class="lede" style="margin-top:22px">Advanced RO purification at home, so every glass you pour is one you can trust.</p>
+        <p class="big-stat" style="margin-top:44px">99.99<span>%</span></p>
+        <p style="margin-top:8px;font-size:1.1rem">of bacteria removed by the RO membrane<sup>*</sup></p>
+        <p class="note" style="margin-top:6px">*Certified by NSF.</p>
+        <ul class="trust" style="margin-top:36px">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>Certified bacteria removal<small>NSF CERTIFIED</small></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 12l9 5 9-5M3 16l9 5 9-5"/></svg>Advanced RO purification<small>KOREAN RO TECHNOLOGY</small></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M5.6 18.4l2.8-2.8M15.6 8.4l2.8-2.8"/></svg>Premium engineering<small>INTEGRATED APPLIANCE</small></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 5.5a3 3 0 010 5.5M18 14.5c1.8.9 3 2.9 3 5.5"/></svg>Peace of mind for your family<small>SMART HOME</small></li>
+        </ul>
+      </div>
+      <figure class="stage">
+        <img src="assets/img/products/vitaglow-11-ultra-1.webp" alt="Livotec VitaGlow 11 Ultra floor-standing purifier" width="1000" height="1000" loading="lazy">
+        <figcaption>VITAGLOW 11 ULTRA</figcaption>
+      </figure>
+    </div>
+
+    <div class="block">
+      <div class="subhead">
+        <h3>How every glass is made</h3>
+        <p class="muted">Water passes through pre-filtration, the RO membrane and functional post-filters before it reaches your tap. PureLite and FlexTemp use 10 stages. VitaGlow uses 11 stages with added minerals.</p>
+      </div>
+      <ol class="path">
+        <li><small>1</small><h4>Pre-filter 1</h4><p>Removes sand, moss and sediment.</p></li>
+        <li><small>2</small><h4>Pre-filter 2</h4><p>Removes chlorine and organic molecules.</p></li>
+        <li><small>3</small><h4>Pre-filter 3</h4><p>Removes remaining residues.</p></li>
+        <li><small>RO</small><h4>RO membrane</h4><p>99.99% removal of bacteria, viruses, heavy metals and arsenic.</p></li>
+        <li><small>+</small><h4>Post-filters</h4><p>T33-GAC for taste, minerals, ORP alkaline and Hydrogen Plus, depending on model.</p></li>
+      </ol>
+    </div>
+
+    <div class="block">
+      <div class="subhead">
+        <h3>A brand families already trust</h3>
+        <p class="muted">Livotec is a Vietnamese water purifier brand under Karofi Global, with in-house R&amp;D, ISO-certified manufacturing and a mission to make safe, pure water accessible to every Filipino household.</p>
+      </div>
+      <div class="facts">
+        <div class="fact"><b>50+</b><span>Countries served globally</span></div>
+        <div class="fact"><b>6M</b><span>Households using Livotec purifiers</span></div>
+        <div class="fact"><b>99.99%</b><span>Purification rate of the RO membrane</span></div>
+        <div class="fact"><b>5-star</b><span>After-sales service promise</span></div>
+      </div>
+      <div class="nsf" style="margin-top:28px">
+        <img src="assets/img/scenes/nsf-certificate.webp" alt="NSF International certificate recognising Tecomen Technology Joint Stock Company as complying with NSF/ANSI 58" width="917" height="706" loading="lazy">
+        <div>
+          <h4 style="font-weight:700;font-size:1.1rem">NSF certified</h4>
+          <p class="muted small" style="margin-top:6px">NSF International lists Tecomen Technology Joint Stock Company as complying with NSF/ANSI 58 for reverse-osmosis drinking water systems.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 03 EVERYDAY: wellness ================= -->
+<section class="band sec--blush" id="life" aria-labelledby="well-h">
+  <div class="wrap duo">
+    <div>
+      <p class="kicker">Everyday wellness</p>
+      <h2 class="hl hl--md" id="well-h">Make better water <span>the easy choice.</span></h2>
+      <p class="lede">When purified water is always within reach, the whole family reaches for it more.</p>
+      <div class="glasses" aria-hidden="true" id="glasses"></div>
+      <div class="glasses-cap" aria-hidden="true"><span>MORNING</span><span>NIGHT</span></div>
+      <ul class="checks">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3s6 6.6 6 11a6 6 0 01-12 0c0-4.4 6-11 6-11z"/></svg>Purified water, ready at home</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 5.5a3 3 0 010 5.5M18 14.5c1.8.9 3 2.9 3 5.5"/></svg>Easier hydration for the whole family</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg>A healthier habit that takes no effort</li>
+      </ul>
+      <div class="band__link"><button type="button" class="btn btn--dark" data-product="vitaglow-11">See VitaGlow 11</button></div>
+    </div>
+    <figure class="band__visual"><img src="assets/img/products/vitaglow-11-1.webp" alt="Livotec VitaGlow 11" width="1000" height="1000" loading="lazy"><figcaption>VITAGLOW 11</figcaption></figure>
+  </div>
+</section>
+
+<!-- convenience -->
+<section class="band sec--mint" aria-labelledby="conv-h">
+  <div class="wrap duo">
+    <figure class="band__visual"><img src="assets/img/products/flextemp-10-cozy-1.webp" alt="Livotec FlexTemp 10 Cozy" width="1000" height="1000" loading="lazy"><figcaption>FLEXTEMP 10 COZY</figcaption></figure>
+    <div>
+      <p class="kicker">One unit, every moment</p>
+      <h2 class="hl hl--md" id="conv-h">Water, <span>when you want it.</span></h2>
+      <p class="lede">From morning coffee to dinner, purified water is one touch away. Hot, cold and ambient on all FlexTemp models.</p>
+      <div class="timeline">
+        <div class="slot" style="--c:#E0664A"><time>6:30<small>AM</small></time><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M4 10h12v5a4 4 0 01-4 4H8a4 4 0 01-4-4z"/><path d="M16 11h1.5a2.5 2.5 0 010 5H16M8 4v3M12 4v3"/></svg><span><b>Brew</b><em>● HOT</em></span></div></div>
+        <div class="slot" style="--c:#3B82D6"><time>12:00<small>PM</small></time><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M6 4h12l-1.5 16h-9z"/><circle cx="10" cy="13" r=".8" fill="currentColor"/><circle cx="13.5" cy="15.5" r=".8" fill="currentColor"/></svg><span><b>Refresh</b><em>● COLD</em></span></div></div>
+        <div class="slot" style="--c:#6B7475"><time>7:00<small>PM</small></time><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 10h18M5 10v6a3 3 0 003 3h8a3 3 0 003-3v-6M9 6h6"/></svg><span><b>Cook</b><em>● AMBIENT</em></span></div></div>
+      </div>
+      <div class="pills">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M8 4h8l1 4v11a1 1 0 01-1 1H8a1 1 0 01-1-1V8z"/><path d="M4 4l16 16"/></svg>No heavy gallons</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>No waiting for delivery</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M10 14V5a2 2 0 014 0v9a4 4 0 11-4 0z"/></svg>Hot, cold &amp; ambient in one</span>
+      </div>
+      <div class="band__link"><button type="button" class="btn btn--dark" data-filter="hotcold">See FlexTemp models</button></div>
+    </div>
+  </div>
+</section>
+
+<!-- control -->
+<section class="band sec--blue" aria-labelledby="ctrl-h">
+  <div class="wrap duo">
+    <div>
+      <p class="kicker">11:47 PM, still available</p>
+      <h2 class="hl hl--md" id="ctrl-h">Your water. <span>Your schedule.</span></h2>
+      <p class="lede">No delivery windows. No running out. Purified water on your terms.</p>
+      <div class="led">
+        <b>SMART LED FAUCET</b>
+        <span><i style="background:#2DBE6C"></i>Green: water quality is good</span>
+        <span><i style="background:#E0484A"></i>Red: time to check</span>
+      </div>
+      <div class="quad">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Available day or night</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 6h12v10H2zM14 10h4l4 4v2h-8z"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg>No delivery schedules</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v10l-8 4-8-4V7z"/><path d="M4 7l8 4 8-4M12 11v10M3 3l18 18"/></svg>No gallons to store</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M5.6 18.4l2.8-2.8M15.6 8.4l2.8-2.8"/></svg>Water quality at a glance</div>
+      </div>
+      <div class="band__link"><button type="button" class="btn btn--dark" data-product="purelite-10-smart">See PureLite 10 Smart</button></div>
+    </div>
+    <figure class="band__visual"><img src="assets/img/products/purelite-10-smart-1.webp" alt="Livotec PureLite 10 Smart with smart LED faucet" width="1000" height="1000" loading="lazy"><figcaption>PURELITE 10 SMART</figcaption></figure>
+  </div>
+</section>
+
+<!-- ================= 04 RANGE ================= -->
+<section class="sec" id="range" aria-labelledby="range-h">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="kicker">Find your Livotec</p>
+        <h2 class="hl hl--md" id="range-h">Seven models. <span>One for every home.</span></h2>
+      </div>
+      <p class="lede" id="rangeLede"></p>
+    </div>
+    <div class="rfilters" role="group" aria-label="Filter models">
+      <button type="button" data-f="all" aria-pressed="true">All models</button>
+      <button type="button" data-f="undersink" aria-pressed="false">Under the sink</button>
+      <button type="button" data-f="hotcold" aria-pressed="false">Hot &amp; cold</button>
+      <button type="button" data-f="minerals" aria-pressed="false">Added minerals</button>
+      <span class="cnt" id="rangeCount" aria-live="polite"></span>
+    </div>
+    <div id="groups"></div>
+    <details class="compare" id="compare">
+      <summary>
+        <span class="compare__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11M15 9v11"/></svg></span>
+        <span class="compare__text"><b>Compare all seven models</b><span>Specs, tank sizes, power and SRPs side by side</span></span>
+        <span class="compare__btn"><span class="when-closed">Show table</span><span class="when-open">Hide table</span><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 4l4 4 4-4"/></svg></span>
+      </summary>
+      <div class="table-wrap"><table class="spec-table" id="specTable"></table></div>
+    </details>
+  </div>
+</section>
+
+<dialog class="pd" id="pd" aria-labelledby="pdName">
+  <button class="pd__close" type="button" data-close aria-label="Close product details"><svg width="14" height="14" viewBox="0 0 14 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M1 1l12 12M13 1L1 13"/></svg></button>
+  <div class="pd__grid">
+    <div class="pd__media">
+      <div class="pd__main">
+        <img id="pdImg" src="" alt="">
+        <button class="pd__nav pd__nav--prev" type="button" id="pdPrev" aria-label="Previous photo"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 2L4 7l5 5"/></svg></button>
+        <button class="pd__nav pd__nav--next" type="button" id="pdNext" aria-label="Next photo"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 2l5 5-5 5"/></svg></button>
+      </div>
+      <div class="pd__thumbs" id="pdThumbs" aria-label="Product photos"></div>
+    </div>
+    <div class="pd__info">
+      <p class="pd__series" id="pdSeries"></p>
+      <h3 class="pd__name" id="pdName"></h3>
+      <p class="pd__line" id="pdLine"></p>
+      <p class="pd__price"><b id="pdSrp"></b><span>SRP</span></p>
+      <dl class="pd__specs" id="pdSpecs"></dl>
+      <div class="pd__warranty"><b>Included with your purchase</b>Free standard installation within 72 hours of order confirmation. 2-year warranty, plus 1 more year on electrical components after product registration. 5 years free maintenance.</div>
+      <div class="pd__actions">
+        <a class="btn btn--dark" href="#book" id="pdSurvey">Book a survey for this model</a>
+        <a class="btn btn--ghost" href="#book" id="pdBuy">Ask about buying</a>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<!-- ================= 05 SERVICE ================= -->
+<section class="sec sec--mint" id="service" aria-labelledby="service-h">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="kicker">Our service commitment</p>
+        <h2 class="hl hl--md" id="service-h">We install it. <span>We look after it.</span></h2>
+      </div>
+      <p class="lede">A purifier is only as good as the care behind it. Every Livotec comes with free standard installation, long warranty coverage and 5 years of free maintenance.</p>
+    </div>
+
+    <div class="block sla">
+      <b>72 hrs</b>
+      <div><h3>Free standard installation</h3><p>Delivery and standard installation within 72 hours after order confirmation, excluding weekends and public holidays.</p></div>
+      <a class="btn btn--primary" href="#book" data-intent="survey">Book a survey</a>
+    </div>
+
+    <div class="block">
+      <div class="subhead"><h3>From order to first glass</h3><p class="muted">Every standard installation follows the same checked process.</p></div>
+      <ol class="steps">
+        <li>You order your Livotec</li>
+        <li>Unit is picked up or delivered</li>
+        <li>Livotec schedules the visit</li>
+        <li>Pre-installation survey</li>
+        <li>Professional installation and operational testing</li>
+        <li>Basic user guidance and completion documents</li>
+      </ol>
+    </div>
+
+    <div class="block">
+      <div class="subhead"><h3>After-sales coverage</h3><p class="muted">Long coverage, so you are never on your own after the sale.</p></div>
+      <div class="coverage">
+        <div><b>5 yrs</b><h4>Core components</h4><p>Coverage for the compressor and block.</p></div>
+        <div><b>2 yrs</b><h4>Electrical systems</h4><p>Pumps, valves, cooling chips and electronic PCBs. Plus 1 more year when you register your product.</p></div>
+        <div><b>1 yr</b><h4>Standard parts</h4><p>Pressure tanks, faucets and standard valves.</p></div>
+        <div><b>5 yrs</b><h4>Free maintenance</h4><p>Water-quality checks, machine assessment, hot and cold tank flushing, and fitting replacements during filter changes.</p></div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="subhead"><h3>What your home needs for free standard installation</h3><p class="muted">Check these before your survey. All electrical, plumbing and drain provisions must be ready before the unit can be installed.</p></div>
+      <ul class="terms">
+        <li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg></i><span><b>Free 2 service visits.</b> 3rd visit onwards is subject to charges.</span></li>
+        <li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3s6 6.6 6 11a6 6 0 01-12 0c0-4.4 6-11 6-11z"/></svg></i><span>Water supply within <b>1.5 meters</b></span></li>
+        <li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 3v6a4 4 0 004 4h8M14 9l4 4-4 4"/></svg></i><span>Water drain within <b>3 meters</b></span></li>
+        <li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M9 3v5M15 3v5M6 8h12v3a6 6 0 01-12 0zM12 17v4"/></svg></i><span>Electrical outlet within <b>1 meter</b></span></li>
+        <li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3 8c3-2 6 2 9 0s6-2 9 0M3 13c3-2 6 2 9 0s6-2 9 0M3 18c3-2 6 2 9 0s6-2 9 0"/></svg></i><span>Maynilad / Manila Water supply</span></li>
+        <li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M12 3v18M16 9l1.5-1.5L19 9M16 15l1.5 1.5L19 15"/></svg></i><span>Elevator access or <b>≤3 floors</b></span></li>
+        <li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3 11h18a9 9 0 01-18 0zM12 20v2M10 11V6a3 3 0 016 0"/></svg></i><span>Non-marble / granite sink</span></li>
+        <li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M14.5 6.5a4 4 0 00-5.2 5.2L4 17l3 3 5.3-5.3a4 4 0 005.2-5.2l-2.5 2.5-2.5-.5-.5-2.5z"/></svg></i><span><b>Simple</b> sink or countertop modification</span></li>
+      </ul>
+      <p class="note" style="margin-top:16px">If the water source or drain is more than 3 meters away, or the electrical supply more than 1 meter away, additional charges for labor and materials apply.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 06 HOW TO GET YOURS ================= -->
+<section class="sec" id="how" aria-labelledby="how-h">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="kicker">How to get yours</p>
+        <h2 class="hl hl--md" id="how-h">Five steps <span>to better water.</span></h2>
+      </div>
+      <p class="lede">Start with a pre-installation survey so we can confirm your home is ready and recommend the right model.</p>
+    </div>
+    <ol class="block how">
+      <li><small>Step 1</small><h4>Send your request</h4><p>Book a survey or ask about buying through the form below.</p></li>
+      <li><small>Step 2</small><h4>Pre-installation survey</h4><p>We check your outlet, water supply, drain and water source.</p></li>
+      <li><small>Step 3</small><h4>Choose and order</h4><p>Pick the model that fits your home and how your family uses water.</p></li>
+      <li><small>Step 4</small><h4>Installed in 72 hours</h4><p>Delivery and standard installation after order confirmation.</p></li>
+      <li><small>Step 5</small><h4>Enjoy, worry-free</h4><p>Five years of free maintenance and long warranty coverage.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="sec sec--beige" id="faq" aria-labelledby="faq-h">
+  <div class="wrap duo" style="align-items:start">
+    <div>
+      <p class="kicker">Questions, answered</p>
+      <h2 class="hl hl--md" id="faq-h">Before <span>you decide.</span></h2>
+      <p class="lede" style="margin-top:22px">Still unsure? Email us at <a href="mailto:info@iontech.com.ph" style="color:var(--cyan-ink);font-weight:600">info@iontech.com.ph</a> and we will help you choose.</p>
+    </div>
+    <div class="faq" id="faqList"></div>
+  </div>
+</section>
+
+<!-- ================= CTA / FORM ================= -->
+<section class="cta" id="book" aria-labelledby="book-h">
+  <div class="wrap cta__grid">
+    <div class="cta__side">
+      <h2 class="hl hl--md" id="book-h">Ready for <span>better water?</span></h2>
+      <p class="lede">Book your pre-installation survey or ask about buying a Livotec. Our team will get back to you to confirm the details.</p>
+      <div class="contact" id="contactList"></div>
+    </div>
+
+    <form class="form" id="leadForm" novalidate>
+      <div class="seg" role="radiogroup" aria-label="What would you like to do?">
+        <label><input type="radio" name="intent" value="survey" checked>Book a pre-installation survey<small>We check your home is ready</small></label>
+        <label><input type="radio" name="intent" value="buy">Ask about buying<small>Prices, models and availability</small></label>
+      </div>
+      <p class="sub" id="formSub" style="margin-top:0">Fill this in and send. It opens an email to our team with your details ready.</p>
+
+      <div class="f-row">
+        <div class="f"><label for="l-name">Full name</label><input id="l-name" autocomplete="name" aria-describedby="l-name-err"><p class="err" id="l-name-err"></p></div>
+        <div class="f"><label for="l-mobile">Mobile number</label><input id="l-mobile" type="tel" autocomplete="tel" placeholder="09XX XXX XXXX" aria-describedby="l-mobile-err"><p class="err" id="l-mobile-err"></p></div>
+      </div>
+      <div class="f-row">
+        <div class="f"><label for="l-email">Email <small>(optional)</small></label><input id="l-email" type="email" autocomplete="email" aria-describedby="l-email-err"><p class="err" id="l-email-err"></p></div>
+        <div class="f"><label for="l-city">City or municipality</label><input id="l-city" autocomplete="address-level2" aria-describedby="l-city-err"><p class="err" id="l-city-err"></p></div>
+      </div>
+      <fieldset class="f"><legend>Models you're interested in <small>(optional)</small></legend><div class="models" id="leadModels"></div></fieldset>
+
+      <div class="survey" id="surveyBox">
+        <h4>Pre-installation checklist</h4>
+        <p class="hint">Answer what you can. Our team will confirm everything during the survey.</p>
+        <div class="f"><label for="l-address">Installation address</label><input id="l-address" autocomplete="street-address" placeholder="House no., street, barangay" aria-describedby="l-address-err"><p class="err" id="l-address-err"></p></div>
+        <div class="f-row">
+          <div class="f"><label for="l-date">Preferred survey date <small>(optional)</small></label><input id="l-date" type="date"></div>
+          <div class="f"><label for="l-source">Water source</label>
+            <select id="l-source"><option value="Maynilad">Maynilad</option><option value="Manila Water">Manila Water</option><option value="Deep well">Deep well</option><option value="District water supplier">District water supplier</option><option value="Others">Others</option><option value="Not sure">Not sure</option></select></div>
+        </div>
+        <div class="f dist" id="sourceOther"><label for="l-source-other">Please specify your water source</label><input id="l-source-other"></div>
+        <div class="q" data-q="outletReady"><span>Is the electric outlet for the water purifier ready?</span></div>
+        <div class="q" data-q="outlet1m" data-dist="Distance of the outlet"><span>Is the electric outlet within 1 meter of the installation area?</span></div>
+        <div class="q" data-q="supply" data-dist="Distance of the water supply"><span>Is the water supply within 1.5 meters of the installation area?</span></div>
+        <div class="q" data-q="drain" data-dist="Distance of the drain"><span>Is the waste or drain provision within 3 meters?</span></div>
+        <div class="f"><label for="l-access">Building access</label>
+          <select id="l-access"><option value="House or ground floor">House or ground floor</option><option value="Elevator available">Elevator available</option><option value="Stairs, 3 floors or fewer">Stairs, 3 floors or fewer</option><option value="Stairs, more than 3 floors">Stairs, more than 3 floors</option></select></div>
+        <div class="q" data-q="marble" data-yes-label="Yes" data-no-label="No"><span>Is your sink or countertop marble or granite?</span></div>
+        <div class="q" data-q="existingPurifier"><span>Do you have an existing water purifier?</span></div>
+        <div class="q" data-q="existingFilter"><span>Do you have an existing water filtration system?</span></div>
+        <div class="ready" id="ready" aria-live="polite"></div>
+        <label class="agree"><input type="checkbox" id="l-agree" aria-describedby="l-agree-err"><span>I understand that free installation is valid on the first and second visits only, service charges apply from the third visit, and installation may be declined until all electrical, plumbing and drain provisions are complete.</span></label>
+        <p class="err" id="l-agree-err"></p>
+      </div>
+
+      <div class="f"><label for="l-msg">Anything else <small>(optional)</small></label><textarea id="l-msg"></textarea></div>
+      <button class="btn btn--primary" type="submit" id="submitBtn">Send survey request</button>
+      <p class="fine">We use your details only to respond to this request.</p>
+      <div class="form-done" id="leadDone" hidden></div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__grid">
+    <div>
+      <div class="foot__brands">
+        <img class="lv" src="assets/img/brand/livotec-logo-white.png" alt="Livotec" width="900" height="155">
+        <span class="x" aria-hidden="true">×</span>
+        <img class="io" src="assets/img/brand/iontech-logo-light.png" alt="Iontech" width="900" height="299">
+      </div>
+      <p>Iontech, Inc. is the authorized distributor of Livotec in the Philippines. SRPs in Philippine pesos and subject to change without notice. Savings figures are estimates. Product photos are for illustration.</p>
+      <p>Own a store or serve business clients? <a href="mailto:info@iontech.com.ph?subject=Livotec%20dealer%20inquiry">Ask about becoming a Livotec dealer</a>.</p>
+    </div>
+    <nav aria-label="Footer"><a href="#savings-calculator">Savings calculator</a><a href="#range">Products</a><a href="#service">Service</a><a href="#faq">FAQ</a><a href="#book">Book a survey</a></nav>
+  </div>
+</footer>
+
+<div class="mobile-cta" id="mobileCta"><a class="btn btn--primary" href="#book" data-intent="survey">Book a pre-installation survey</a></div>
+
+<script>
+/* =========================================================================
+   SITE DATA: edit here. Product data: "Product Details" Google Sheet.
+   ========================================================================= */
+var CONTACT = { email:'info@iontech.com.ph', web:'https://www.iontech.com.ph' };
+
+var SERIES = [
+  { id:'purelite', name:['Pure','Lite'], tag:'Fresh water. Every day. Every drop.', desc:'Under-sink RO for kitchens, condos and space-conscious homes.' },
+  { id:'flextemp', name:['Flex','Temp'], tag:'Protecting what matters most.', desc:'Hot, cold and ambient water from one floor-standing unit.' },
+  { id:'vitaglow', name:['Vita','Glow'], tag:'Healthy living starts with pure water.', desc:'11-stage filtration with added minerals.' }
+];
+var BASE = { gpd:'100 GPD', supply:'220–240V / 60Hz', power:'25W', pressure:'100 / 414 kPa', origin:'Vietnam', tech:'Reverse osmosis' };
+var PRODUCTS = [
+  { id:'purelite-10-hydrogen', series:'purelite', name:'PureLite 10 Hydrogen', type:'Under-sink', srp:19990, badge:'Lowest price', tags:['undersink'],
+    line:'Under-sink RO with alkaline and hydrogen-rich water, at the most accessible price in the range.',
+    temp:'Ambient', stages:'10 stages', tanks:null, heatCool:null, weight:'9.5 kg', dim:'304 × 209 × 436 mm', photos:5 },
+  { id:'purelite-10-smart', series:'purelite', name:'PureLite 10 Smart', type:'Under-sink / countertop', srp:26990, tags:['undersink'],
+    line:'Compact purifier with a smart LED faucet that turns green or red to show water quality.',
+    temp:'Ambient', stages:'10 stages', tanks:null, heatCool:null, weight:'8 kg', dim:'280 × 212 × 410 mm', photos:8, extra:'Smart LED faucet (green / red water-quality light)' },
+  { id:'flextemp-10-edge', series:'flextemp', name:'FlexTemp 10 Edge', type:'Floor-standing', srp:37990, tags:['hotcold'],
+    line:'Compact hot and cold with 1 L / 1 L tanks, plus ambient water.',
+    temp:'Hot, cold & ambient', stages:'10 stages', tanks:'1 L / 1 L', heatCool:'430W / 90W', weight:'32 kg', dim:'320 × 400 × 990 mm', photos:1 },
+  { id:'flextemp-10-cozy', series:'flextemp', name:'FlexTemp 10 Cozy', type:'Floor-standing', srp:38990, tags:['hotcold'],
+    line:'Safe hydration for all ages, with a larger 2 L cold tank.',
+    temp:'Hot, cold & ambient', stages:'10 stages', tanks:'1 L / 2 L', heatCool:'430W / 90W', weight:'33 kg', dim:'310 × 380 × 960 mm', photos:9 },
+  { id:'flextemp-10-sense', series:'flextemp', name:'FlexTemp 10 Sense', type:'Floor-standing', srp:48990, tags:['hotcold'],
+    line:'Touch-screen controls with overflow protection, built for family protection.',
+    temp:'Hot, cold & ambient', stages:'10 stages', tanks:'1 L / 2 L', heatCool:'430W / 90W', weight:'33 kg', dim:'310 × 380 × 960 mm', photos:9, extra:'Touch-screen controls with overflow protection' },
+  { id:'vitaglow-11', series:'vitaglow', name:'VitaGlow 11', type:'Floor-standing', srp:27990, tags:['minerals'],
+    line:'Smart water for a healthier home: 11-stage filtration with added minerals, served at room temperature.',
+    temp:'Ambient only (no hot & cold)', stages:'11 stages with added minerals', tanks:null, heatCool:null, weight:'33 kg', dim:'320 × 400 × 990 mm', photos:9 },
+  { id:'vitaglow-11-ultra', series:'vitaglow', name:'VitaGlow 11 Ultra', type:'Floor-standing', srp:51990, badge:'Flagship', tags:['minerals','hotcold'],
+    line:'The flagship: 11-stage mineral filtration with hot and cold, a glass design and smart control.',
+    temp:'Hot & cold', stages:'11 stages with added minerals', tanks:'1 L / 2 L', heatCool:'430W / 90W', weight:'33 kg', dim:'320 × 400 × 990 mm', photos:9 }
+];
+
+var FAQ = [
+  ['Why is Livotec cheaper than buying gallon water over time?',
+   '<p>With refills you pay for every gallon, every week, for as long as you drink water. With Livotec you pay once for the purifier, then only for replacement filters. Use the <a href="#savings-calculator">savings calculator</a> with your own household size and refill price to see your break-even year.</p>'],
+  ['What does free standard installation include?',
+   '<p>A pre-installation survey, professional installation, operational testing, basic user guidance and completion documentation. Delivery and standard installation happen within 72 hours after order confirmation, excluding weekends and public holidays.</p><p>Free installation is valid on the first and second visits. Service charges apply from the third visit.</p>'],
+  ['What does my home need before installation?',
+   '<ul><li>Electrical outlet within 1 meter</li><li>Water supply within 1.5 meters</li><li>Water drain within 3 meters</li><li>Maynilad or Manila Water supply</li><li>Elevator access, or 3 floors or fewer</li><li>A non-marble, non-granite sink, needing only a simple sink or countertop modification</li></ul><p>If the water source or drain is more than 3 meters away, or the electrical supply more than 1 meter away, additional charges for labor and materials apply. Installation can only proceed once all electrical, plumbing and drain provisions are complete.</p>'],
+  ['My home uses a deep well or another water supplier. Can I still get a Livotec?',
+   '<p>Free standard installation terms cover Maynilad and Manila Water supply. Tell us your water source in the survey form and our team will advise you on the next step.</p>'],
+  ['How often do I replace filters, and how much do they cost?',
+   '<ul><li>Pre-filter set: ₱2,535, every 10,000 litres</li><li>RO membrane: ₱4,180, every 30,000 litres</li><li>Functional filter set: ₱7,005, every 10,000 litres</li></ul><p>Filter prices are the same for every Livotec model. How often you replace them depends on your water quality and consumption; follow Livotec\'s service recommendations.</p>'],
+  ['What does the warranty cover?',
+   '<ul><li>5 years on core components (compressor and block)</li><li>2 years on electrical systems, plus 1 more year when you register your product</li><li>1 year on standard parts such as pressure tanks, faucets and valves</li><li>5 years free maintenance</li></ul>'],
+  ['Can I pay in installments?',
+   '<p>Open the monthly comparison in the <a href="#savings-calculator">savings calculator</a> to see what a 12, 24 or 36-month plan could look like against your monthly refill spend. Actual financing terms depend on the dealer or bank.</p>'],
+  ['Which model is right for my home?',
+   '<p>Under-sink PureLite models suit kitchens and condos. FlexTemp gives you hot, cold and ambient water. VitaGlow adds minerals, and the VitaGlow 11 Ultra adds hot and cold. Not sure? Book a pre-installation survey and we will recommend a model for your space.</p>']
+];
+
+/* ========================================================================= */
+(function(){
+  'use strict';
+  document.documentElement.classList.add('js');
+  var $ = function(id){ return document.getElementById(id); };
+  var fmt = new Intl.NumberFormat('en-PH',{maximumFractionDigits:0});
+  var peso = function(v){ return '₱' + fmt.format(Math.round(v)); };
+  var byId = {}; PRODUCTS.forEach(function(p){ byId[p.id]=p; });
+  var img = function(id,n,small){ return 'assets/img/products/'+id+'-'+n+(small?'-sm':'')+'.webp'; };
+  var esc = function(s){ return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];}); };
+  var seriesOf = function(p){ return SERIES.filter(function(s){return s.id===p.series;})[0]; };
+
+  /* ---- 208 gallons (4 refills a week x 52 weeks) ---- */
+  var g=''; for (var i=0;i<4*52;i++) g+='<i></i>'; $('gallons').innerHTML=g;
+  /* glasses: morning to night */
+  $('glasses').innerHTML=[14,30,46,62,78,94].map(function(f){ var y=4+56*(1-f/100), xl=2+3*(y-4)/56, xr=38-3*(y-4)/56;
+    return '<svg viewBox="0 0 40 62"><path d="M'+xl.toFixed(1)+' '+y.toFixed(1)+'L'+xr.toFixed(1)+' '+y.toFixed(1)+'L35 60L5 60Z" fill="#8FD3E6"/><path d="M2 2L38 2L35 60L5 60Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/></svg>'; }).join('');
+
+  /* ---- Range ---- */
+  var min = Math.min.apply(null, PRODUCTS.map(function(p){return p.srp;}));
+  $('rangeLede').textContent = 'Under-sink, hot and cold, or mineral-rich. Every model runs on 100 GPD reverse osmosis, starts at ' + peso(min) + ', and comes with free standard installation.';
+  $('groups').innerHTML = SERIES.map(function(s){
+    var items = PRODUCTS.filter(function(p){return p.series===s.id;});
+    return '<div class="group" data-series="'+s.id+'"><div><h3 class="group__name">'+s.name[0]+'<b>'+s.name[1]+'</b></h3><p class="group__tag">'+esc(s.tag)+'</p><p class="group__desc">'+esc(s.desc)+'</p></div>' +
+      '<div class="cards">' + items.map(function(p){
+        return '<button type="button" class="pcard" data-product="'+p.id+'" data-tags="'+p.tags.join(' ')+'" aria-haspopup="dialog">' +
+          '<span class="pcard__img">'+(p.badge?'<span class="pcard__badge">'+p.badge+'</span>':'')+'<img src="'+img(p.id,1,true)+'" alt="'+esc(p.name)+'" loading="lazy" width="560" height="560"></span>' +
+          '<span class="pcard__body"><span class="pcard__type">'+esc(p.type)+', '+esc(p.temp.toLowerCase())+'</span><span class="pcard__name">'+esc(p.name)+'</span>' +
+          '<span class="pcard__line">'+esc(p.line)+'</span><span class="pcard__foot"><span class="pcard__srp"><small>SRP</small>'+peso(p.srp)+'</span><span class="pcard__more">View details</span></span></span></button>';
+      }).join('') + '</div></div>';
+  }).join('');
+  function applyFilter(f){
+    var shown=0;
+    document.querySelectorAll('.rfilters button').forEach(function(b){ b.setAttribute('aria-pressed', b.dataset.f===f); });
+    document.querySelectorAll('.pcard[data-tags]').forEach(function(c){ var on = f==='all' || c.dataset.tags.split(' ').indexOf(f)>-1; c.hidden=!on; if(on) shown++; });
+    document.querySelectorAll('.group').forEach(function(gr){ gr.hidden = !gr.querySelector('.pcard:not([hidden])'); });
+    $('rangeCount').textContent = shown + (shown===1?' model':' models');
+  }
+  document.querySelector('.rfilters').addEventListener('click', function(e){ var b=e.target.closest('button[data-f]'); if(b) applyFilter(b.dataset.f); });
+  applyFilter('all');
+  document.querySelectorAll('[data-filter]').forEach(function(b){ b.addEventListener('click', function(){ applyFilter(b.dataset.filter); $('range').scrollIntoView({behavior:'smooth'}); }); });
+
+  var ROWS = [
+    ['Series', function(p){ return seriesOf(p).name.join(''); }], ['Type', function(p){ return p.type; }], ['Water', function(p){ return p.temp; }],
+    ['Filtration', function(p){ return p.stages; }], ['Capacity', function(){ return BASE.gpd; }], ['Hot / cold tank', function(p){ return p.tanks || '–'; }],
+    ['Heating / cooling power', function(p){ return p.heatCool || '–'; }], ['Consumption power', function(){ return BASE.power; }],
+    ['Weight', function(p){ return p.weight; }], ['Dimensions', function(p){ return p.dim; }], ['SRP', function(p){ return '<b>'+peso(p.srp)+'</b>'; }]
+  ];
+  var ordered = PRODUCTS.slice().sort(function(a,b){return a.srp-b.srp;});
+  $('specTable').innerHTML = '<thead><tr><th scope="col"><span class="sr-only">Spec</span></th>' + ordered.map(function(p){return '<th scope="col">'+esc(p.name)+'</th>';}).join('') + '</tr></thead><tbody>' +
+    ROWS.map(function(r){ return '<tr><th scope="row">'+r[0]+'</th>'+ordered.map(function(p){return '<td>'+r[1](p)+'</td>';}).join('')+'</tr>'; }).join('') + '</tbody>';
+
+  /* ---- Product dialog ---- */
+  var dlg=$('pd'), current=null, photo=1;
+  function showPhoto(n){
+    photo=((n-1+current.photos)%current.photos)+1; $('pdImg').src=img(current.id,photo); $('pdImg').alt=current.name+', photo '+photo+' of '+current.photos;
+    Array.prototype.forEach.call($('pdThumbs').children,function(b,i){ b.setAttribute('aria-current', i+1===photo?'true':'false'); });
+  }
+  function openProduct(id){
+    current=byId[id]; if(!current) return;
+    $('pdSeries').textContent = seriesOf(current).name.join('') + ' series' + (current.badge ? ', ' + current.badge.toLowerCase() : '');
+    $('pdName').textContent=current.name; $('pdLine').textContent=current.line; $('pdSrp').textContent=peso(current.srp);
+    var specs=[['Model type',current.type],['Technology',BASE.tech],['Water',current.temp],['Filtration',current.stages],['Capacity',BASE.gpd],
+      current.tanks?['Hot / cold tank',current.tanks]:null, current.heatCool?['Heating / cooling power',current.heatCool]:null,
+      ['Consumption power',BASE.power],['Power supply',BASE.supply],['Inlet pressure (min / max)',BASE.pressure], current.extra?['Feature',current.extra]:null,
+      ['Weight',current.weight],['Dimensions',current.dim],['Origin',BASE.origin]].filter(Boolean);
+    $('pdSpecs').innerHTML=specs.map(function(r){return '<div><dt>'+r[0]+'</dt><dd>'+esc(r[1])+'</dd></div>';}).join('');
+    var t=''; for(var i=1;i<=current.photos;i++) t+='<button type="button" data-n="'+i+'" aria-label="Photo '+i+'"><img src="'+img(current.id,i,true)+'" alt="" loading="lazy"></button>';
+    $('pdThumbs').innerHTML=t; var multi=current.photos>1; $('pdPrev').hidden=!multi; $('pdNext').hidden=!multi; $('pdThumbs').hidden=!multi;
+    showPhoto(1);
+    if (typeof dlg.showModal==='function') dlg.showModal(); else dlg.setAttribute('open','');
+    document.querySelector('.pd__info').scrollTop=0; document.querySelector('.pd__grid').scrollTop=0;
+  }
+  function closeDlg(){ if(dlg.open){ if(dlg.close) dlg.close(); else dlg.removeAttribute('open'); } }
+  document.addEventListener('click', function(e){ var c=e.target.closest('[data-product]'); if(c) openProduct(c.getAttribute('data-product')); });
+  dlg.addEventListener('click', function(e){ if(e.target===dlg || e.target.closest('[data-close]')) closeDlg(); var th=e.target.closest('#pdThumbs button'); if(th) showPhoto(Number(th.dataset.n)); });
+  $('pdPrev').addEventListener('click', function(){ showPhoto(photo-1); });
+  $('pdNext').addEventListener('click', function(){ showPhoto(photo+1); });
+  dlg.addEventListener('keydown', function(e){ if(current&&current.photos>1){ if(e.key==='ArrowLeft') showPhoto(photo-1); if(e.key==='ArrowRight') showPhoto(photo+1); } });
+  function pick(model,intent){ var box=document.querySelector('#leadModels input[value="'+model+'"]'); if(box) box.checked=true; setIntent(intent); closeDlg(); }
+  $('pdSurvey').addEventListener('click', function(){ pick(current.name,'survey'); });
+  $('pdBuy').addEventListener('click', function(){ pick(current.name,'buy'); });
+
+  /* ---- FAQ ---- */
+  $('faqList').innerHTML = FAQ.map(function(f){ return '<details><summary>'+esc(f[0])+'<i aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" stroke="currentColor" stroke-width="1.6"><path d="M6 0v12M0 6h12"/></svg></i></summary><div class="a">'+f[1]+'</div></details>'; }).join('');
+
+  /* ---- Contact ---- */
+  var ic = {
+    mail:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>',
+    web:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.5 3.8 9S14.5 18.5 12 21c-2.5-2.5-3.8-5.5-3.8-9S9.5 5.5 12 3z"/></svg>'
+  };
+  $('contactList').innerHTML = '<a href="mailto:'+CONTACT.email+'">'+ic.mail+'<div>'+CONTACT.email+'<br><span>Email our team</span></div></a>' +
+    '<a href="'+CONTACT.web+'" target="_blank" rel="noopener">'+ic.web+'<div>iontech.com.ph<br><span>Iontech, Inc., authorized distributor of Livotec</span></div></a>';
+
+  /* ---- Lead form ---- */
+  $('leadModels').innerHTML = ordered.map(function(p){ return '<label><input type="checkbox" name="models" value="'+esc(p.name)+'">'+esc(p.name)+'</label>'; }).join('');
+  document.querySelectorAll('.q').forEach(function(q){
+    var k=q.dataset.q, dist=q.dataset.dist;
+    var html='<div class="yn" role="radiogroup" aria-label="'+esc(q.querySelector('span').textContent)+'">' +
+      ['Yes','No','Not sure'].map(function(v){ return '<label><input type="radio" name="q-'+k+'" value="'+v+'">'+v+'</label>'; }).join('') + '</div>';
+    if (dist) html += '<div class="f dist" id="d-'+k+'"><label for="dist-'+k+'">'+dist+' <small>(approx. meters)</small></label><input id="dist-'+k+'" inputmode="decimal" placeholder="e.g. 2.5"></div>';
+    q.insertAdjacentHTML('beforeend', html);
+  });
+  var form=$('leadForm');
+  var ans = function(k){ var r=form.querySelector('input[name="q-'+k+'"]:checked'); return r?r.value:''; };
+  function readiness(){
+    var items=[], c={ok:'#2DBE6C', warn:'#E0A400', stop:'#E0484A', info:'#6B7475'};
+    if (ans('outletReady')==='No') items.push(['stop','Prepare an electric outlet first. Installation can only proceed once electrical, plumbing and drain provisions are complete.']);
+    if (ans('outlet1m')==='No') items.push(['warn','Outlet more than 1 meter away: additional charges for labor and materials apply.']);
+    if (ans('supply')==='No') items.push(['warn','Water supply more than 1.5 meters away: outside standard installation terms. Charges apply beyond 3 meters.']);
+    if (ans('drain')==='No') items.push(['warn','Drain more than 3 meters away: additional charges for labor and materials apply.']);
+    var src=$('l-source').value;
+    if (['Maynilad','Manila Water','Not sure'].indexOf(src)<0) items.push(['info','Water source outside Maynilad / Manila Water: our team will advise you during the survey.']);
+    if ($('l-access').value==='Stairs, more than 3 floors') items.push(['info','More than 3 floors without an elevator is outside standard installation terms. Our team will advise.']);
+    if (ans('marble')==='Yes') items.push(['info','Marble or granite sinks are outside standard installation terms. Our team will advise.']);
+    var unsure = ['outletReady','outlet1m','supply','drain'].some(function(k){ return ans(k)==='Not sure'; }) || src==='Not sure';
+    if (unsure) items.push(['info','Not sure about some items? No problem. We will check them during the survey.']);
+    var ok = !items.some(function(x){return x[0]!=='info';}) && ['outletReady','outlet1m','supply','drain'].every(function(k){return ans(k)==='Yes';});
+    var head = ok ? 'Your home looks ready for free standard installation.' : items.length ? 'Good to know before your survey' : 'Answer the checklist to see if your home is ready.';
+    $('ready').innerHTML = '<b>'+head+'</b>' + (items.length ? '<ul>'+items.map(function(x){ return '<li style="--c:'+c[x[0]]+'"><i></i><span>'+x[1]+'</span></li>'; }).join('')+'</ul>' : '');
+    ['outlet1m','supply','drain'].forEach(function(k){ var d=$('d-'+k); if(d) d.classList.toggle('on', ans(k)==='No'); });
+    $('sourceOther').classList.toggle('on', src==='Others');
+    return items;
+  }
+  form.addEventListener('change', readiness); readiness();
+
+  function intent(){ return form.querySelector('input[name="intent"]:checked').value; }
+  function setIntent(v){
+    form.querySelector('input[name="intent"][value="'+v+'"]').checked=true;
+    var s = v==='survey';
+    $('surveyBox').hidden=!s;
+    $('submitBtn').textContent = s ? 'Send survey request' : 'Send buying inquiry';
+    $('formSub').textContent = s ? 'Fill this in and send. It opens an email to our team with your details and checklist ready.' : 'Tell us what you are looking for. It opens an email to our team with your details ready.';
+  }
+  form.querySelectorAll('input[name="intent"]').forEach(function(r){ r.addEventListener('change', function(){ setIntent(r.value); }); });
+  document.querySelectorAll('[data-intent]').forEach(function(a){ a.addEventListener('click', function(){ setIntent(a.dataset.intent); }); });
+
+  var RULES = {
+    'l-name': function(v){ return v ? '' : 'Enter your full name.'; },
+    'l-mobile': function(v){ return /^(\+?63|0)9\d{9}$/.test(v.replace(/[\s-]/g,'')) ? '' : 'Enter a PH mobile number, like 0917 123 4567.'; },
+    'l-email': function(v){ return !v || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) ? '' : 'Check the email format, like name@email.com.'; },
+    'l-city': function(v){ return v ? '' : 'Enter your city or municipality.'; },
+    'l-address': function(v){ return intent()!=='survey' || v ? '' : 'Enter the installation address for the survey.'; }
+  };
+  function validate(show){
+    var ok=true;
+    Object.keys(RULES).forEach(function(id){ var el=$(id), m=RULES[id](el.value.trim()); if(m) ok=false;
+      if(show||el.dataset.touched){ el.setAttribute('aria-invalid', m?'true':'false'); $(id+'-err').textContent=m; } });
+    var agreeMsg = intent()==='survey' && !$('l-agree').checked ? 'Please confirm you have read the installation terms.' : '';
+    if (agreeMsg) ok=false; if (show) $('l-agree-err').textContent=agreeMsg;
+    return ok;
+  }
+  Object.keys(RULES).forEach(function(id){ $(id).addEventListener('blur', function(){ this.dataset.touched='1'; validate(false); }); });
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    if(!validate(true)){ var bad=form.querySelector('[aria-invalid="true"]') || $('l-agree'); if(bad) bad.focus(); return; }
+    var v=function(id){ return $(id).value.trim(); };
+    var models=Array.prototype.map.call(form.querySelectorAll('input[name="models"]:checked'),function(c){return c.value;});
+    var s=intent()==='survey';
+    var lines=[ s?'Hi Livotec team, I would like to book a pre-installation survey.':'Hi Livotec team, I would like to ask about buying a Livotec water purifier.', '',
+      'Name: '+v('l-name'), 'Mobile: '+v('l-mobile'), 'Email: '+(v('l-email')||'-'), 'City / municipality: '+v('l-city'),
+      'Models of interest: '+(models.length?models.join(', '):'Not sure yet') ];
+    if (s) {
+      var d=function(k){ var x=$('dist-'+k); return x&&x.value.trim()?' ('+x.value.trim()+' m)':''; };
+      var src=v('l-source')+(v('l-source')==='Others'&&v('l-source-other')?': '+v('l-source-other'):'');
+      lines=lines.concat(['', 'PRE-INSTALLATION CHECKLIST',
+        'Installation address: '+v('l-address'), 'Preferred survey date: '+(v('l-date')||'-'),
+        'Electric outlet ready: '+(ans('outletReady')||'-'), 'Outlet within 1 m: '+(ans('outlet1m')||'-')+d('outlet1m'),
+        'Water supply within 1.5 m: '+(ans('supply')||'-')+d('supply'), 'Drain within 3 m: '+(ans('drain')||'-')+d('drain'),
+        'Water source: '+src, 'Building access: '+v('l-access'), 'Marble / granite sink: '+(ans('marble')||'-'),
+        'Existing water purifier: '+(ans('existingPurifier')||'-'), 'Existing filtration system: '+(ans('existingFilter')||'-'),
+        'Agreed to installation terms: Yes']);
+    }
+    if (v('l-msg')) lines=lines.concat(['','Notes: '+v('l-msg')]);
+    lines=lines.concat(['','Sent from the Livotec Philippines website.']);
+    var subject=(s?'Livotec pre-installation survey request: ':'Livotec buying inquiry: ')+v('l-name')+', '+v('l-city');
+    var href='mailto:'+CONTACT.email+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(lines.join('\n'));
+    window.location.href=href;
+    var done=$('leadDone'); done.hidden=false;
+    done.innerHTML='Your email app should now be open with your request ready. Press send there to reach us. If nothing opened, email <a href="'+href+'">'+CONTACT.email+'</a>.';
+  });
+
+  /* ---- Header, progress, active section ---- */
+  var head=$('siteHead'), prog=$('progress'), hero=$('top'), mcta=$('mobileCta'), book=$('book');
+  var links=Array.prototype.slice.call(document.querySelectorAll('#nav a'));
+  var secs=links.map(function(a){ return document.querySelector(a.getAttribute('href')); });
+  var ticking=false;
+  function onScroll(){
+    ticking=false; var y=window.scrollY, h=document.documentElement.scrollHeight-window.innerHeight;
+    head.classList.toggle('is-solid', y>hero.offsetHeight-90);
+    prog.style.transform='scaleX('+(h>0?Math.min(1,y/h):0)+')';
+    var mark=y+window.innerHeight*.35, act=-1; secs.forEach(function(s,i){ if(s&&s.offsetTop<=mark) act=i; });
+    links.forEach(function(a,i){ if(i===act) a.setAttribute('aria-current','true'); else a.removeAttribute('aria-current'); });
+    mcta.classList.toggle('is-on', y>hero.offsetHeight*.8 && book.getBoundingClientRect().top>window.innerHeight);
+  }
+  window.addEventListener('scroll', function(){ if(!ticking){ ticking=true; requestAnimationFrame(onScroll); } }, {passive:true});
+  window.addEventListener('resize', onScroll); onScroll();
+  var menuBtn=$('menuBtn');
+  menuBtn.addEventListener('click', function(){ var o=head.classList.toggle('menu-open'); menuBtn.setAttribute('aria-expanded',o); menuBtn.setAttribute('aria-label',o?'Close menu':'Open menu'); });
+  links.forEach(function(a){ a.addEventListener('click', function(){ head.classList.remove('menu-open'); menuBtn.setAttribute('aria-expanded','false'); }); });
+
+  /* ---- Hero film ---- */
+  var film=$('film'), bPlay=$('filmPlay'), bSound=$('filmSound');
+  var reduce=window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function safePlay(){ var r=film.play(); if(r&&r.catch) r.catch(function(){}); }
+  function setPlayUI(p){ bPlay.setAttribute('aria-pressed',p); bPlay.setAttribute('aria-label',p?'Pause film':'Play film'); bPlay.querySelector('.ic-pause').style.display=p?'':'none'; bPlay.querySelector('.ic-play').style.display=p?'none':''; }
+  function setSoundUI(on){ bSound.setAttribute('aria-pressed',on); bSound.setAttribute('aria-label',on?'Turn sound off':'Turn sound on'); bSound.querySelector('.snd-on').style.display=on?'':'none'; bSound.querySelector('.snd-off').style.display=on?'none':''; }
+  film.muted=true;
+  if(!reduce) safePlay(); else setPlayUI(false);
+  film.addEventListener('play', function(){ setPlayUI(true); }); film.addEventListener('pause', function(){ setPlayUI(false); });
+  var autoPaused=false;
+  bPlay.addEventListener('click', function(){ autoPaused=false; if(film.paused) safePlay(); else film.pause(); });
+  bSound.addEventListener('click', function(){ film.muted=!film.muted; setSoundUI(!film.muted); if(!film.muted){ film.currentTime=0; safePlay(); } });
+  if('IntersectionObserver' in window) new IntersectionObserver(function(en){ en.forEach(function(x){
+    if(!x.isIntersecting && !film.paused){ autoPaused=true; film.pause(); } else if(x.isIntersecting && autoPaused){ autoPaused=false; safePlay(); } }); },{threshold:0}).observe(film);
+})();
+</script>
+
+<script>
+/* =========================================================================
+   Livotec Savings Calculator: script.js. Only change from the original:
+   filtersConfirmed set to true for all models (filter prices are the same
+   across the range).
+   ========================================================================= */
+/* ==========================================================================
+   Livotec Water Savings Calculator
+   Sections:
+     1. Calculation constants        (CONFIG)
+     2. Default inputs               (DEFAULTS)
+     3. Product data                 (LOCAL_PRODUCTS)  <- edit prices here
+     4. Remote data source           (DATA_SOURCE)     <- Google Sheets hook
+     5. Calculation engine           (pure, no DOM)
+     6. User interface (members, refill price, model, mineral filter)
+   ========================================================================== */
+(function () {
+  'use strict';
+
+  /* ------------------------------------------------------------------------
+     1. CALCULATION CONSTANTS
+     ------------------------------------------------------------------------ */
+  var CONFIG = {
+    litersPerPersonPerDay: 3,
+    litersPerGallon: 20,
+    // Default lifespans. A product can override any of them (see lifespans below).
+    filters: [
+      { key: 'prefilter',     label: 'Pre-filter',     lifespanL: 10000, optional: false },
+      { key: 'roMembrane',    label: 'RO membrane',    lifespanL: 30000, optional: false },
+      { key: 'mineralFilter', label: 'Functional filter', lifespanL: 15000, optional: true  }
+    ],
+    projectionOptions: [5, 10],
+    daysPerMonth: 30,                 // monthly tab uses 30 days, not 365/12
+    installmentTerms: [12, 24, 36],   // months
+    mineralFilterPrice: 7005,         // functional filter, used when a product has no price of its own
+    // One-time cost of a regular water dispenser, added to the refill side (Year 1)
+    // for models flagged replacesDispenser. Those purifiers dispense water themselves,
+    // so a refill household would need to buy a dispenser to compare like for like.
+    dispenserCost: 8000
+  };
+
+  /* ------------------------------------------------------------------------
+     2. DEFAULT INPUTS (used on load and by "Reset calculator")
+     ------------------------------------------------------------------------ */
+  var DEFAULTS = {
+    members: 4,
+    daysPerYear: 365,
+    refillPrice: 40,
+    initialContainers: 3,
+    containerPrice: 150,
+    productId: 'U05',
+    includeMineral: false,
+    projectionYears: 10,
+    installmentMonths: 24,
+    interestRate: 0
+  };
+
+  /* ------------------------------------------------------------------------
+     3. PRODUCT DATA
+     Order here = order in the model dropdown.
+     filtersConfirmed: false shows a "not yet confirmed" notice on screen.
+     Filter prices are the same across all Livotec models (confirmed Sept 2026):
+     pre-filter set 2,535 and RO membrane 4,180.
+     mineralFilter: null means "no default"; the user enters it on screen.
+     replacesDispenser: true adds CONFIG.dispenserCost to the refill side in Year 1
+     (VitaGlow and FlexTemp series). PureLite series: false.
+     ------------------------------------------------------------------------ */
+  var LOCAL_PRODUCTS = [
+    { id: 'U05', name: 'PureLite 10 Hydrogen', replacesDispenser: false, price: 19990, filtersConfirmed: true,
+      filters: { prefilter: 2535, roMembrane: 4180, mineralFilter: null }, lifespans: {} },
+    { id: 'purelite-10-smart', name: 'PureLite 10 Smart', replacesDispenser: false, price: 26990, filtersConfirmed: true,
+      filters: { prefilter: 2535, roMembrane: 4180, mineralFilter: null }, lifespans: {} },
+    { id: 'vitaglow-11', name: 'VitaGlow 11', replacesDispenser: true, price: 27990, filtersConfirmed: true,
+      filters: { prefilter: 2535, roMembrane: 4180, mineralFilter: null }, lifespans: {} },
+    { id: 'flextemp-10-edge', name: 'FlexTemp 10 Edge', replacesDispenser: true, price: 37990, filtersConfirmed: true,
+      filters: { prefilter: 2535, roMembrane: 4180, mineralFilter: null }, lifespans: {} },
+    { id: 'flextemp-10-cozy', name: 'FlexTemp 10 Cozy', replacesDispenser: true, price: 38990, filtersConfirmed: true,
+      filters: { prefilter: 2535, roMembrane: 4180, mineralFilter: null }, lifespans: {} },
+    { id: 'flextemp-10-sense', name: 'FlexTemp 10 Sense', replacesDispenser: true, price: 48990, filtersConfirmed: true,
+      filters: { prefilter: 2535, roMembrane: 4180, mineralFilter: null }, lifespans: {} },
+    { id: 'vitaglow-11-ultra', name: 'VitaGlow 11 Ultra', replacesDispenser: true, price: 51990, filtersConfirmed: true,
+      filters: { prefilter: 2535, roMembrane: 4180, mineralFilter: null }, lifespans: {} }
+  ];
+
+  /* ------------------------------------------------------------------------
+     4. REMOTE DATA SOURCE (Google Sheets -> Apps Script -> here)
+     Paste the Apps Script web app URL (ends in /exec). While empty, or if the
+     request fails / the device is offline, LOCAL_PRODUCTS is used.
+     Expected JSON: { "products": [ { id, name, price, prefilter, roMembrane,
+       mineralFilter, prefilterLifespanL, roMembraneLifespanL,
+       mineralFilterLifespanL, filtersConfirmed, replacesDispenser, active } ] }
+     ------------------------------------------------------------------------ */
+  var DATA_SOURCE = {
+    productsUrl: '',
+    timeoutMs: 5000
+  };
+
+  function toNumber(value) {
+    if (value === null || value === undefined || value === '') return null;
+    var n = Number(String(value).replace(/[₱,\s]/g, ''));
+    return Number.isFinite(n) ? n : null;
+  }
+
+  function isTrue(value) {
+    return value === true || String(value).trim().toUpperCase() === 'TRUE';
+  }
+
+  // Converts flat spreadsheet rows into the internal product shape and drops bad rows.
+  function normalizeProducts(rows) {
+    if (!Array.isArray(rows)) return [];
+    return rows
+      .filter(function (r) { return r && !(r.active === false || String(r.active).trim().toUpperCase() === 'FALSE'); })
+      .map(function (r) {
+        return {
+          id: String(r.id || '').trim(),
+          name: String(r.name || '').trim(),
+          price: toNumber(r.price),
+          filtersConfirmed: isTrue(r.filtersConfirmed),
+          replacesDispenser: isTrue(r.replacesDispenser),
+          filters: {
+            prefilter: toNumber(r.prefilter),
+            roMembrane: toNumber(r.roMembrane),
+            mineralFilter: toNumber(r.mineralFilter)
+          },
+          lifespans: {
+            prefilter: toNumber(r.prefilterLifespanL),
+            roMembrane: toNumber(r.roMembraneLifespanL),
+            mineralFilter: toNumber(r.mineralFilterLifespanL)
+          }
+        };
+      })
+      .filter(function (p) {
+        return p.id && p.name && p.price > 0 &&
+          p.filters.prefilter !== null && p.filters.prefilter >= 0 &&
+          p.filters.roMembrane !== null && p.filters.roMembrane >= 0;
+      });
+  }
+
+  function loadRemoteProducts() {
+    if (!DATA_SOURCE.productsUrl || typeof fetch !== 'function') return Promise.resolve(null);
+    var controller = typeof AbortController === 'function' ? new AbortController() : null;
+    var timer = setTimeout(function () { if (controller) controller.abort(); }, DATA_SOURCE.timeoutMs);
+    return fetch(DATA_SOURCE.productsUrl, { cache: 'no-store', signal: controller ? controller.signal : undefined })
+      .then(function (res) { if (!res.ok) throw new Error('HTTP ' + res.status); return res.json(); })
+      .then(function (data) {
+        var list = normalizeProducts(data && data.products);
+        return list.length ? list : null;
+      })
+      .catch(function (err) {
+        console.warn('Livotec calculator: using local product data.', err);
+        return null;
+      })
+      .finally(function () { clearTimeout(timer); });
+  }
+
+  /* ------------------------------------------------------------------------
+     5. CALCULATION ENGINE (pure functions, no DOM access)
+     ------------------------------------------------------------------------ */
+
+  // How many lifespan thresholds are crossed between two cumulative volumes.
+  // A threshold reached exactly at year end is charged in that year.
+  // Handles high-use homes that cross the same threshold more than once a year.
+  function replacementsBetween(litersBefore, litersAfter, lifespanL) {
+    var EPS = 1e-9;
+    return Math.floor(litersAfter / lifespanL + EPS) - Math.floor(litersBefore / lifespanL + EPS);
+  }
+
+  function positiveOr(value, fallback) {
+    return (typeof value === 'number' && value > 0) ? value : fallback;
+  }
+
+  /**
+   * @param {object} inputs  validated: members, daysPerYear, refillPrice, initialContainers,
+   *                         containerPrice, includeMineral, projectionYears
+   * @param {object} product one entry of the product list
+   * @param {object} config  CONFIG
+   */
+  function calculateProjection(inputs, product, config) {
+    var dailyLiters = inputs.members * config.litersPerPersonPerDay;
+    var annualLiters = dailyLiters * inputs.daysPerYear;
+    var annualGallons = annualLiters / config.litersPerGallon;
+    // Rounded per year so every table row reconciles to the peso.
+    var annualRefillCost = Math.round(annualGallons * inputs.refillPrice);
+    var containerCost = Math.round(inputs.initialContainers * inputs.containerPrice);
+    var dispenserCost = product.replacesDispenser ? Math.round(config.dispenserCost || 0) : 0;
+    var oneTimeRefillCost = containerCost + dispenserCost;
+
+    // The first set of filters ships with the purifier; only replacements are charged.
+    var activeFilters = config.filters
+      .filter(function (f) { return !f.optional || inputs.includeMineral; })
+      .map(function (f) {
+        var lifespanL = positiveOr(product.lifespans && product.lifespans[f.key], f.lifespanL);
+        return {
+          key: f.key,
+          label: f.label,
+          lifespanL: lifespanL,
+          price: f.key === 'mineralFilter'
+            ? positiveOr(product.filters.mineralFilter, config.mineralFilterPrice)
+            : (product.filters[f.key] || 0),
+          yearsPerReplacement: annualLiters > 0 ? lifespanL / annualLiters : Infinity
+        };
+      });
+
+    var rows = [];
+    var cumulative = 0;
+    var totals = { traditional: 0, livotec: 0, savings: 0 };
+
+    for (var year = 1; year <= inputs.projectionYears; year++) {
+      var litersBefore = annualLiters * (year - 1);
+      var litersAfter = annualLiters * year;
+      var replacements = [];
+      var filterCost = 0;
+
+      activeFilters.forEach(function (f) {
+        var count = replacementsBetween(litersBefore, litersAfter, f.lifespanL);
+        if (count > 0) {
+          replacements.push({ key: f.key, label: f.label, count: count, cost: count * f.price });
+          filterCost += count * f.price;
+        }
+      });
+
+      // Year 1 refill side: containers + dispenser (if applicable) + refills.
+      var traditional = annualRefillCost + (year === 1 ? oneTimeRefillCost : 0);
+      var livotec = (year === 1 ? product.price : 0) + filterCost;
+      var savings = traditional - livotec;
+      cumulative += savings;
+
+      totals.traditional += traditional;
+      totals.livotec += livotec;
+      totals.savings += savings;
+
+      rows.push({
+        year: year,
+        litersToDate: litersAfter,
+        traditional: traditional,
+        livotec: livotec,
+        savings: savings,
+        cumulative: cumulative,
+        replacements: replacements
+      });
+    }
+
+    // Break-even: first year from which cumulative savings stay >= 0 to the end of the
+    // projection. This avoids reporting a year if a later filter cost pushes it negative again.
+    var breakEvenYear = null;
+    for (var i = rows.length - 1; i >= 0; i--) {
+      if (rows[i].cumulative >= 0) breakEvenYear = rows[i].year;
+      else break;
+    }
+
+    return {
+      dailyLiters: dailyLiters,
+      annualLiters: annualLiters,
+      annualGallons: annualGallons,
+      annualRefillCost: annualRefillCost,
+      containerCost: containerCost,
+      dispenserCost: dispenserCost,
+      activeFilters: activeFilters,
+      rows: rows,
+      totals: totals,
+      breakEvenYear: breakEvenYear
+    };
+  }
+
+  // Validation rules. "when" limits a rule to a state (e.g. mineral filter switched on).
+  var FIELD_RULES = {
+    members:           { min: 1, max: 50,     integer: true,  message: 'Enter 1 to 50 people.' },
+    refillPrice:       { min: 1, max: 10000,  integer: false, message: 'Enter a price from ₱1 to ₱10,000.' },
+    daysPerYear:       { min: 1, max: 366,    integer: true,  message: 'Enter a whole number from 1 to 366.' },
+    initialContainers: { min: 0, max: 100,    integer: true,  message: 'Enter a whole number from 0 to 100.' },
+    containerPrice:    { min: 0, max: 100000, integer: false, message: 'Enter ₱0 or more.' },
+    interestRate:      { min: 0, max: 60,     integer: false, message: 'Enter a rate from 0% to 60%.' }
+  };
+
+  function validateValue(raw, rule) {
+    var text = String(raw === undefined || raw === null ? '' : raw).trim();
+    if (text === '') return { ok: false, value: null };
+    var n = Number(text);
+    var ok = Number.isFinite(n) && n >= rule.min && n <= rule.max && (!rule.integer || Number.isInteger(n));
+    return { ok: ok, value: ok ? n : null };
+  }
+
+  /**
+   * Monthly view: recurring refill spend vs the monthly amortization of a purifier.
+   * Interest is add-on (flat): total payable = principal x (1 + rate/100 x years).
+   * Swap this one formula for a reducing-balance one if dealer financing changes.
+   */
+  function calculateMonthly(inputs, product, config) {
+    var monthlyLiters = inputs.members * config.litersPerPersonPerDay * config.daysPerMonth;
+    var monthlyGallons = monthlyLiters / config.litersPerGallon;
+    var monthlyRefill = Math.round(monthlyGallons * inputs.refillPrice);
+
+    var mineralPrice = positiveOr(product.filters.mineralFilter, config.mineralFilterPrice);
+    var financed = product.price + (inputs.includeMineral ? mineralPrice : 0);
+
+    var months = inputs.installmentMonths;
+    // Models that dispense water: the refill side also needs a dispenser, spread
+    // over the same number of months as the installment plan being compared.
+    var monthlyDispenser = product.replacesDispenser ? Math.round((config.dispenserCost || 0) / months) : 0;
+    var monthlyRefillTotal = monthlyRefill + monthlyDispenser;
+    var years = months / 12;
+    var totalPayable = Math.round(financed * (1 + (inputs.interestRate / 100) * years));
+    var monthlyAmortization = Math.round(totalPayable / months);
+
+    // Monthly cost of each filter = monthly liters / filter capacity x filter SRP.
+    var filterBreakdown = config.filters
+      .filter(function (f) { return !f.optional || inputs.includeMineral; })
+      .map(function (f) {
+        var lifespanL = positiveOr(product.lifespans && product.lifespans[f.key], f.lifespanL);
+        var price = f.key === 'mineralFilter' ? mineralPrice : (product.filters[f.key] || 0);
+        return {
+          key: f.key, label: f.label, lifespanL: lifespanL, price: price,
+          monthly: Math.round((monthlyLiters / lifespanL) * price)
+        };
+      });
+    var monthlyFilters = filterBreakdown.reduce(function (sum, f) { return sum + f.monthly; }, 0);
+
+    var plans = config.installmentTerms.map(function (m) {
+      var total = Math.round(financed * (1 + (inputs.interestRate / 100) * (m / 12)));
+      return { months: m, totalPayable: total, monthly: Math.round(total / m) };
+    });
+
+    return {
+      monthlyLiters: monthlyLiters,
+      monthlyGallons: monthlyGallons,
+      monthlyRefill: monthlyRefill,
+      monthlyDispenser: monthlyDispenser,
+      monthlyRefillTotal: monthlyRefillTotal,
+      financed: financed,
+      months: months,
+      totalPayable: totalPayable,
+      monthlyAmortization: monthlyAmortization,
+      monthlyFilters: monthlyFilters,
+      filterBreakdown: filterBreakdown,
+      monthlyTotal: monthlyAmortization + monthlyFilters,
+      difference: monthlyRefillTotal - (monthlyAmortization + monthlyFilters),
+      planDifference: monthlyRefillTotal - monthlyAmortization,   // monthly tab: refill side vs plan payment
+      plans: plans
+    };
+  }
+
+  // Expose the engine for automated tests (Node) without touching the browser global scope.
+  if (typeof module !== 'undefined' && module.exports) {
+    module.exports = {
+      CONFIG: CONFIG, DEFAULTS: DEFAULTS, LOCAL_PRODUCTS: LOCAL_PRODUCTS, FIELD_RULES: FIELD_RULES,
+      calculateProjection: calculateProjection, calculateMonthly: calculateMonthly,
+      replacementsBetween: replacementsBetween,
+      normalizeProducts: normalizeProducts, validateValue: validateValue
+    };
+  }
+  if (typeof document === 'undefined') return;
+
+  /* ------------------------------------------------------------------------
+     6. USER INTERFACE
+     Shared inputs: members, refill price, model, mineral filter.
+     Tab 1 (savings): 10-year projection with the year scroller.
+     Tab 2 (monthly): recurring refill spend vs monthly amortization.
+     ------------------------------------------------------------------------ */
+  var SHARED_FIELDS = ['members', 'refillPrice'];
+  var MONTHLY_FIELDS = ['interestRate'];
+  var numberFmt = new Intl.NumberFormat('en-PH', { maximumFractionDigits: 0 });
+
+  function peso(v) {
+    var r = Math.round(v);
+    return (r < 0 ? '−' : '') + '₱' + numberFmt.format(Math.abs(r));
+  }
+
+  function init() {
+    var $ = function (id) { return document.getElementById(id); };
+    var form = $('calculator');
+    var planForm = $('planForm');
+    var els = {
+      members: $('members'), refillPrice: $('refillPrice'), product: $('product'),
+      modelNotice: $('modelNotice'), dispenserNote: $('dispenserNote'),
+      result: $('result'), resultLabel: $('resultLabel'), resultStale: $('resultStale'),
+      outSavings: $('outSavings'), outPeriod: $('outPeriod'), outBreakEven: $('outBreakEven'),
+      outConsumption: $('outConsumption'), yearTrack: $('yearTrack'), liveRegion: $('liveRegion'),
+      interestRate: $('interestRate'), plans: $('plans'), monthlyStale: $('monthlyStale'),
+      outMonthlyRefill: $('outMonthlyRefill'), outMonthlyAmort: $('outMonthlyAmort'),
+      outMonthlyTerm: $('outMonthlyTerm'), outRefillSub: $('outRefillSub'),
+      outDiff: $('outDiff'), outDiffLabel: $('outDiffLabel'), outDiffFigure: $('outDiffFigure'), outDiffSub: $('outDiffSub'),
+      outMonthlyLiters: $('outMonthlyLiters'), outFinanced: $('outFinanced'),
+      outTotalPayable: $('outTotalPayable'), outTermLabel: $('outTermLabel'),
+      compareBars: $('compareBars')
+    };
+    var products = LOCAL_PRODUCTS.slice();
+    var touched = {};
+    var lastResult = null;                          // latest valid projection
+    var selectedYear = DEFAULTS.projectionYears;    // year centered in the scroller
+    var installmentMonths = DEFAULTS.installmentMonths;
+    var announceTimer = null;
+    var scrollFrame = 0;
+
+    function getProduct(id) {
+      for (var i = 0; i < products.length; i++) if (products[i].id === id) return products[i];
+      return products[0];
+    }
+
+    function populateProducts(selectedId) {
+      els.product.innerHTML = '';
+      products.forEach(function (p) { els.product.appendChild(new Option(p.name, p.id)); });
+      els.product.value = getProduct(selectedId).id;
+    }
+
+    function applyDefaults() {
+      els.members.value = DEFAULTS.members;
+      els.refillPrice.value = DEFAULTS.refillPrice;
+      els.product.value = getProduct(DEFAULTS.productId).id;
+      els.interestRate.value = DEFAULTS.interestRate;
+    }
+
+    function readState() {
+      var state = {
+        daysPerYear: DEFAULTS.daysPerYear,
+        initialContainers: DEFAULTS.initialContainers,
+        containerPrice: DEFAULTS.containerPrice,
+        projectionYears: DEFAULTS.projectionYears,
+        installmentMonths: installmentMonths,
+        productId: els.product.value,
+        includeMineral: false   // functional filter is not offered in the interface
+      };
+      var errors = {};
+      SHARED_FIELDS.concat(MONTHLY_FIELDS).forEach(function (key) {
+        var check = validateValue(els[key].value, FIELD_RULES[key]);
+        if (check.ok) state[key] = check.value; else errors[key] = FIELD_RULES[key].message;
+      });
+      return { state: state, errors: errors };
+    }
+
+    function showErrors(errors) {
+      SHARED_FIELDS.concat(MONTHLY_FIELDS).forEach(function (key) {
+        var input = els[key];
+        var visible = errors[key] && (touched[key] || input.value.trim() !== '' || input.validity.badInput);
+        input.setAttribute('aria-invalid', errors[key] ? 'true' : 'false');
+        $(key + '-error').textContent = visible ? errors[key] : '';
+      });
+    }
+
+    /* ---- Tab 1: year scroller ---- */
+    function yearsText(n) { return n === 1 ? '1 year' : n + ' years'; }
+
+    function buildChips(count) {
+      if (els.yearTrack.children.length === count) return;
+      els.yearTrack.innerHTML = '';
+      for (var y = 1; y <= count; y++) {
+        var chip = document.createElement('button');
+        chip.type = 'button';
+        chip.className = 'year-chip';
+        chip.setAttribute('data-year', y);
+        chip.innerHTML = '<span class="year-chip__year">Year ' + y + '</span><span class="year-chip__amt">—</span>';
+        els.yearTrack.appendChild(chip);
+      }
+    }
+
+    // Shows cumulative savings as of the given year in the result card.
+    function showYear(year) {
+      if (!lastResult) return;
+      var rows = lastResult.rows;
+      year = Math.min(rows.length, Math.max(1, year));
+      selectedYear = year;
+      var cum = rows[year - 1].cumulative;
+      var recovered = Math.round(cum) >= 0;
+
+      els.resultLabel.textContent = recovered ? 'Your potential savings' : 'Still to recover';
+      els.outSavings.textContent = peso(Math.abs(cum));
+      els.outPeriod.textContent = 'after ' + yearsText(year);
+
+      Array.prototype.forEach.call(els.yearTrack.children, function (chip) {
+        var active = Number(chip.getAttribute('data-year')) === year;
+        chip.classList.toggle('is-active', active);
+        if (active) chip.setAttribute('aria-current', 'true'); else chip.removeAttribute('aria-current');
+      });
+
+      clearTimeout(announceTimer);
+      announceTimer = setTimeout(function () {
+        els.liveRegion.textContent = (recovered ? 'Potential savings ' : 'Still to recover ') + peso(Math.abs(cum)) + ' after ' + yearsText(year);
+      }, 450);
+    }
+
+    function nearestYear() {
+      var track = els.yearTrack;
+      var center = track.getBoundingClientRect().left + track.clientWidth / 2;
+      var best = selectedYear, bestDist = Infinity;
+      Array.prototype.forEach.call(track.children, function (chip) {
+        var r = chip.getBoundingClientRect();
+        var d = Math.abs(r.left + r.width / 2 - center);
+        if (d < bestDist) { bestDist = d; best = Number(chip.getAttribute('data-year')); }
+      });
+      return best;
+    }
+
+    function scrollToYear(year, instant) {
+      var chip = els.yearTrack.children[year - 1];
+      if (!chip) return;
+      var track = els.yearTrack;
+      var target = chip.offsetLeft - track.offsetLeft - (track.clientWidth - chip.offsetWidth) / 2;
+      if (instant) {
+        track.style.scrollBehavior = 'auto';
+        track.scrollLeft = target;
+        track.style.scrollBehavior = '';
+      } else {
+        track.scrollTo({ left: target, behavior: 'smooth' });
+      }
+    }
+
+    function renderSavings(result, state) {
+      var n = state.projectionYears;
+      lastResult = result;
+      buildChips(result.rows.length);
+
+      els.outBreakEven.textContent = result.breakEvenYear ? 'Year ' + result.breakEvenYear : 'Not within ' + n + ' years';
+      els.outConsumption.textContent = numberFmt.format(result.annualLiters) + ' L';
+
+      result.rows.forEach(function (r, i) {
+        var chip = els.yearTrack.children[i];
+        var amt = chip.lastChild;
+        amt.textContent = peso(r.cumulative);
+        amt.classList.toggle('is-neg', Math.round(r.cumulative) < 0);
+        chip.classList.toggle('is-breakeven', r.year === result.breakEvenYear);
+        chip.setAttribute('aria-label', 'Year ' + r.year + ', total savings ' + peso(r.cumulative) +
+          (r.year === result.breakEvenYear ? ', break-even year' : ''));
+      });
+
+      showYear(selectedYear);
+    }
+
+    /* ---- Tab 2: monthly comparison ---- */
+    function renderMonthly(monthly) {
+      els.outMonthlyRefill.textContent = peso(monthly.monthlyRefillTotal);
+      els.outRefillSub.textContent = monthly.monthlyDispenser
+        ? 'per month, including ' + peso(monthly.monthlyDispenser) + ' dispenser'
+        : 'per month';
+      els.outMonthlyAmort.textContent = peso(monthly.monthlyAmortization);
+      els.outMonthlyTerm.textContent = 'per month for ' + monthly.months + ' months';
+
+      // Third column: what the gap means for the customer this month.
+      var diff = monthly.planDifference;
+      var keeping = diff >= 0;
+      els.outDiffLabel.textContent = keeping ? 'You keep' : 'Your actual investment';
+      els.outDiffFigure.textContent = peso(Math.abs(diff));
+      els.outDiffSub.textContent = keeping ? 'per month' : 'per month extra';
+      els.outDiff.classList.toggle('is-invest', !keeping);
+      els.outMonthlyLiters.textContent = numberFmt.format(monthly.monthlyLiters) + ' L (' +
+        numberFmt.format(Math.round(monthly.monthlyGallons)) + ' gallons)';
+      els.outFinanced.textContent = peso(monthly.financed);
+      els.outTermLabel.textContent = monthly.months;
+      els.outTotalPayable.textContent = peso(monthly.totalPayable);
+      // Visual comparison: monthly refill spend vs the monthly plan payment, same scale.
+      var scale = Math.max(monthly.monthlyRefillTotal, monthly.monthlyAmortization) || 1;
+      var pct = function (v) { return (v / scale * 100).toFixed(1) + '%'; };
+      els.compareBars.innerHTML =
+        '<div class="bar-row"><div class="bar-row__head"><span>Gallon refills</span>' +
+        '<span class="bar-row__total">' + peso(monthly.monthlyRefillTotal) + ' a month</span></div>' +
+        '<div class="bar"><span class="bar__seg bar__seg--refill" style="width:' + pct(monthly.monthlyRefill) + '"></span>' +
+        (monthly.monthlyDispenser ? '<span class="bar__seg bar__seg--dispenser" style="width:' + pct(monthly.monthlyDispenser) + '"></span>' : '') +
+        '</div></div>' +
+        '<div class="bar-row"><div class="bar-row__head"><span>Livotec plan, ' + monthly.months + ' months</span>' +
+        '<span class="bar-row__total">' + peso(monthly.monthlyAmortization) + ' a month</span></div>' +
+        '<div class="bar"><span class="bar__seg bar__seg--plan" style="width:' + pct(monthly.monthlyAmortization) + '"></span></div></div>' +
+        (monthly.monthlyDispenser
+          ? '<div class="bar-legend"><span><i class="bar__seg--refill"></i>Refills ' + peso(monthly.monthlyRefill) + '</span>' +
+            '<span><i class="bar__seg--dispenser"></i>Dispenser ' + peso(monthly.monthlyDispenser) +
+            ', ' + peso(CONFIG.dispenserCost) + ' over ' + monthly.months + ' months</span></div>'
+          : '');
+
+      Array.prototype.forEach.call(els.plans.children, function (btn, i) {
+        var plan = monthly.plans[i];
+        btn.querySelector('.plan__amt').innerHTML = peso(plan.monthly) + '<small>' + peso(plan.totalPayable) + ' total</small>';
+        btn.setAttribute('aria-checked', plan.months === monthly.months ? 'true' : 'false');
+      });
+    }
+
+    function buildPlans() {
+      els.plans.innerHTML = '';
+      CONFIG.installmentTerms.forEach(function (m) {
+        var btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'plan';
+        btn.setAttribute('role', 'radio');
+        btn.setAttribute('aria-checked', m === installmentMonths ? 'true' : 'false');
+        btn.setAttribute('data-months', m);
+        btn.innerHTML = '<span class="plan__term">' + m + ' months</span><span class="plan__amt">—</span>';
+        els.plans.appendChild(btn);
+      });
+    }
+
+    /* ---- Tabs ---- */
+    var tabs = [$('tab-savings'), $('tab-monthly')];
+    function selectTab(index) {
+      tabs.forEach(function (tab, i) {
+        var on = i === index;
+        tab.setAttribute('aria-selected', on ? 'true' : 'false');
+        tab.tabIndex = on ? 0 : -1;
+        $(tab.getAttribute('aria-controls')).hidden = !on;
+      });
+      if (index === 0) requestAnimationFrame(function () { scrollToYear(selectedYear, true); });
+    }
+    tabs.forEach(function (tab, i) {
+      tab.addEventListener('click', function () { selectTab(i); tab.focus(); });
+      tab.addEventListener('keydown', function (e) {
+        if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
+        e.preventDefault();
+        var next = (i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length;
+        selectTab(next); tabs[next].focus();
+      });
+    });
+
+    /* ---- Main update ---- */
+    function update() {
+      var read = readState();
+      var product = getProduct(read.state.productId);
+      els.modelNotice.hidden = product.filtersConfirmed;
+      els.dispenserNote.hidden = !product.replacesDispenser;
+      els.dispenserNote.textContent = 'Refill cost includes a ' + peso(CONFIG.dispenserCost) +
+        ' water dispenser, since this model dispenses water.';
+      showErrors(read.errors);
+
+      var savingsOk = !read.errors.members && !read.errors.refillPrice;
+      els.result.classList.toggle('is-stale', !savingsOk);
+      els.resultStale.hidden = savingsOk;
+      if (savingsOk) renderSavings(calculateProjection(read.state, product, CONFIG), read.state);
+
+      var monthlyOk = savingsOk && !read.errors.interestRate;
+      els.monthlyStale.hidden = monthlyOk;
+      if (monthlyOk) renderMonthly(calculateMonthly(read.state, product, CONFIG));
+    }
+
+    /* ---- Events ---- */
+    form.addEventListener('submit', function (e) { e.preventDefault(); });
+    planForm.addEventListener('submit', function (e) { e.preventDefault(); });
+    [form, planForm].forEach(function (f) {
+      f.addEventListener('input', update);
+      f.addEventListener('change', update);
+      f.addEventListener('focusout', function (e) {
+        if (e.target.id && FIELD_RULES[e.target.id]) { touched[e.target.id] = true; update(); }
+      });
+    });
+
+    form.querySelectorAll('.stepper__btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var rule = FIELD_RULES.members;
+        var current = Number(els.members.value);
+        var base = els.members.value.trim() !== '' && Number.isFinite(current) ? Math.round(current) : DEFAULTS.members;
+        els.members.value = Math.min(rule.max, Math.max(rule.min, base + Number(btn.getAttribute('data-step'))));
+        update();
+      });
+    });
+
+    els.plans.addEventListener('click', function (e) {
+      var btn = e.target.closest('.plan');
+      if (!btn) return;
+      installmentMonths = Number(btn.getAttribute('data-months'));
+      update();
+    });
+
+    // Recalculate the headline on every scroll frame while swiping left or right.
+    els.yearTrack.addEventListener('scroll', function () {
+      cancelAnimationFrame(scrollFrame);
+      scrollFrame = requestAnimationFrame(function () {
+        var year = nearestYear();
+        if (year !== selectedYear) showYear(year);
+      });
+    }, { passive: true });
+
+    els.yearTrack.addEventListener('click', function (e) {
+      var chip = e.target.closest('.year-chip');
+      if (chip) scrollToYear(Number(chip.getAttribute('data-year')));
+    });
+
+    els.yearTrack.addEventListener('keydown', function (e) {
+      if (!lastResult) return;
+      var map = { ArrowLeft: -1, ArrowRight: 1 };
+      var next = null;
+      if (map[e.key]) next = selectedYear + map[e.key];
+      else if (e.key === 'Home') next = 1;
+      else if (e.key === 'End') next = lastResult.rows.length;
+      if (next === null) return;
+      e.preventDefault();
+      next = Math.min(lastResult.rows.length, Math.max(1, next));
+      showYear(next);
+      scrollToYear(next);
+    });
+
+    if (typeof ResizeObserver === 'function') {
+      new ResizeObserver(function () { scrollToYear(selectedYear, true); }).observe(els.yearTrack);
+    }
+
+    /* ---- Start ---- */
+    populateProducts(DEFAULTS.productId);
+    buildPlans();
+    applyDefaults();
+    update();
+    requestAnimationFrame(function () { scrollToYear(selectedYear, true); });
+
+    loadRemoteProducts().then(function (list) {
+      if (!list) return;
+      var current = els.product.value;
+      products = list;
+      populateProducts(current);
+      update();
+    });
+  }
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
+})();
+
+</script>
+</body>
+</html>
